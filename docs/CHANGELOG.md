@@ -84,6 +84,7 @@ Latest changes
    * libpcap 1.1.1/1.10.5
    * libpng 1.6.47
    * pango 1.56.2
+   * pixman 0.44.2
 
  - Firmware updates:
    * Please see [FIRMWARES](FIRMWARES.md) for the list of currently supported devices and firmwares.
