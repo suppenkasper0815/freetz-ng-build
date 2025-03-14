@@ -17,36 +17,36 @@ jobs:
       fail-fast: false
       matrix:
         fritz: [ 
-          "FREETZ_TYPE_WLAN        FREETZ_TYPE_FIRMWARE_04_XX",
-          "FREETZ_TYPE_7270_V1     FREETZ_TYPE_FIRMWARE_04_XX  FREETZ_TARGET_IPV6_SUPPORT",
-          "FREETZ_TYPE_7270_V3     FREETZ_TYPE_FIRMWARE_06_0X",
-          "FREETZ_TYPE_7390        FREETZ_TYPE_FIRMWARE_05_2X",
-          "FREETZ_TYPE_7390        FREETZ_TYPE_FIRMWARE_06_0X",
-          "FREETZ_TYPE_7390        FREETZ_TYPE_FIRMWARE_06_2X",
-          "FREETZ_TYPE_7490        FREETZ_TYPE_FIRMWARE_06_5X",
-          "FREETZ_TYPE_7490        FREETZ_TYPE_FIRMWARE_07_2X",
-          "FREETZ_TYPE_7580        FREETZ_TYPE_FIRMWARE_06_8X",
-          "FREETZ_TYPE_7590_W5     FREETZ_TYPE_FIRMWARE_07_0X",
-          "FREETZ_TYPE_7590_W5     FREETZ_TYPE_FIRMWARE_07_2X",
-          "FREETZ_TYPE_7590_W5     FREETZ_TYPE_FIRMWARE_07_5X",
-          "FREETZ_TYPE_1750        FREETZ_TYPE_FIRMWARE_07_0X",
-          "FREETZ_TYPE_1750        FREETZ_TYPE_FIRMWARE_07_2X",
-          "FREETZ_TYPE_7581        FREETZ_TYPE_FIRMWARE_07_1X",
-          "FREETZ_TYPE_7530_W6_V1  FREETZ_TYPE_FIRMWARE_07_2X",
-          "FREETZ_TYPE_7530_W6_V1  FREETZ_TYPE_FIRMWARE_07_5X",
-          "FREETZ_TYPE_4040        FREETZ_TYPE_FIRMWARE_07_0X",
-          "FREETZ_TYPE_1200_W5     FREETZ_TYPE_FIRMWARE_07_2X",
-          "FREETZ_TYPE_7690        FREETZ_TYPE_FIRMWARE_07_5X",
-          "FREETZ_TYPE_5590        FREETZ_TYPE_FIRMWARE_08_0X",
-          "FREETZ_TYPE_6490        FREETZ_TYPE_FIRMWARE_06_8X",
-          "FREETZ_TYPE_6590        FREETZ_TYPE_FIRMWARE_07_0X",
-          "FREETZ_TYPE_6590        FREETZ_TYPE_FIRMWARE_07_2X",
-          "FREETZ_TYPE_6591        FREETZ_TYPE_FIRMWARE_07_0X",
-          "FREETZ_TYPE_6660        FREETZ_TYPE_FIRMWARE_07_1X",
-          "FREETZ_TYPE_6660        FREETZ_TYPE_FIRMWARE_07_2X",
-          "FREETZ_TYPE_6670        FREETZ_TYPE_FIRMWARE_07_5X",
-          "FREETZ_TYPE_6690        FREETZ_TYPE_FIRMWARE_07_5X",
-          "FREETZ_TYPE_6670        FREETZ_TYPE_FIRMWARE_08_0X",
+          "_WLAN        _FIRMWARE_04_XX",
+          "_7270_V1     _FIRMWARE_04_XX  FREETZ_TARGET_IPV6_SUPPORT",
+          "_7270_V3     _FIRMWARE_06_0X",
+          "_7390        _FIRMWARE_05_2X",
+          "_7390        _FIRMWARE_06_0X",
+          "_7390        _FIRMWARE_06_2X",
+          "_7490        _FIRMWARE_06_5X",
+          "_7490        _FIRMWARE_07_2X",
+          "_7580        _FIRMWARE_06_8X",
+          "_7590_W5     _FIRMWARE_07_0X",
+          "_7590_W5     _FIRMWARE_07_2X",
+          "_7590_W5     _FIRMWARE_07_5X",
+          "_1750        _FIRMWARE_07_0X",
+          "_1750        _FIRMWARE_07_2X",
+          "_7581        _FIRMWARE_07_1X",
+          "_7530_W6_V1  _FIRMWARE_07_2X",
+          "_7530_W6_V1  _FIRMWARE_07_5X",
+          "_4040        _FIRMWARE_07_0X",
+          "_1200_W5     _FIRMWARE_07_2X",
+          "_7690        _FIRMWARE_07_5X",
+          "_5590        _FIRMWARE_08_0X",
+          "_6490        _FIRMWARE_06_8X",
+          "_6590        _FIRMWARE_07_0X",
+          "_6590        _FIRMWARE_07_2X",
+          "_6591        _FIRMWARE_07_0X",
+          "_6660        _FIRMWARE_07_1X",
+          "_6660        _FIRMWARE_07_2X",
+          "_6670        _FIRMWARE_07_5X",
+          "_6690        _FIRMWARE_07_5X",
+          "_6670        _FIRMWARE_08_0X",
          ]
     runs-on: ubuntu-latest
     if: github.repository == 'freetz-ng/freetz-ng'
@@ -121,7 +121,7 @@ jobs:
           echo 'FREETZ_REAL_DEVELOPER_ONLY__DLURL="${{ secrets.ACTIONS_DLTCS }}"'                     >> .config
           echo 'FREETZ_DOWNLOAD_TOOLCHAIN=y'                                                          >> .config
           echo 'FREETZ_HOSTTOOLS_DOWNLOAD=y'                                                          >> .config
-          for x in ${{ matrix.fritz }}; do echo "$x=y"; done                                          >> .config
+          for x in ${{ matrix.fritz }}; do echo "$x=y" | sed 's/^_/FREETZ_TYPE_/'; done               >> .config
           grep -q '^FREETZ_TYPE_' .config || echo 'FREETZ_TYPE_7530_W6_V1=y'                          >> .config
           grep -q '^FREETZ_TYPE_FIRMWARE_' .config || echo 'FREETZ_TYPE_FIRMWARE_08_0X=y'             >> .config
           echo "################################################################" && du .config && wc -l .config
@@ -139,9 +139,11 @@ jobs:
           [ -z "$TYPE" ] && echo -n 'Waiting ' && for x in $(seq 60); do echo -n '.' && sleep 1; done && echo ' done.' && git pull
           for x in pkgs libs host-tools; do [ -d make/$x/$pkg ] && TYPE=$x; done
           [ -z "$TYPE" ] && echo "No directory." && exit
-          sed "/_$pkg/d;/_$PKG/d"                                                                    -i .config
-          [ "$TYPE" = "pkgs" ] && echo "FREETZ_PACKAGE_$PKG=y"                                       >> .config
-          [ "$TYPE" = "libs" ] && echo "FREETZ_LIB_$pkg=y"                                           >> .config
+          sed "/_$pkg/d;/_$PKG/d"                                                                                                      -i .config
+          [ "$TYPE" = "pkgs" ] && echo "FREETZ_PACKAGE_$PKG=y"                                                                         >> .config
+          [ "$TYPE" = "libs" ] && echo "FREETZ_LIB_$pkg=y"                                                                             >> .config
+          [ "$TYPE" = "libs" ] && echo "FREETZ_LIB_lib$pkg=y"                                                                          >> .config
+          [ "$TYPE" = "libs" ] && for x in $(sed -n 's/\t *config FREETZ_LIB_//p' make/libs/$pkg/Config.in); do echo "FREETZ_LIB_$x=y" >> .config; done
           echo "################################################################" && bash -c "echo pkg=$pkg" && bash -c "echo PKG=$PKG"
 
       - name: addon
