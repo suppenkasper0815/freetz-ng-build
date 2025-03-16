@@ -61,7 +61,7 @@ jobs:
       - name: args
         id: args
         run: |
-          export ARGS="$(for x in ${{ matrix.fritz }}; do echo "$x" | sed 's/^_/FREETZ_TYPE_/'; done)"
+          export ARGS="$(for x in ${{ matrix.fritz }}; do echo -n "$x " | sed 's/^_/FREETZ_TYPE_/'; done)"
           echo "args='$ARGS'" >> $GITHUB_OUTPUT
           echo "################################################################" && bash -c "echo ARGS='$ARGS'"
 
