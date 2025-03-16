@@ -1,16 +1,16 @@
-name: make_matrix70
+name: kernel_fos62
 
 on:
 # push:
 #   branches: [ master ]
 #   paths:
-#     - '.github/workflows/make_matrix70.yml'
+#     - '.github/workflows/kernel_fos62.yml'
 # schedule:
 #   - cron: '00 15 28 * *'
   workflow_dispatch:
 
 concurrency:
-  group: make_matrix
+  group: kernel_fos
   cancel-in-progress: false
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        fritz: [ "0450","0540","0546","1240_W5","1260_V1","1750","1759","3000_W5","3490","4020","4040","5490","5491","6490","6590","6591","6820_V1","6890","7362","7430","7490","7530_W5","7560","7580","7590_W5" ]
+        fritz: [ "0300","0540","0546","1750","1759","3272","3370","3390","3490","6810","6840","6842","7272","7312","7320","7330_SL","7330_XL","7360_SL","7360_V1","7360_V2","7362","7369","7390","7412","7430","7490" ]
     runs-on: ubuntu-latest
 #   if: github.repository == 'freetz-ng/freetz-ng'
 
@@ -98,7 +98,7 @@ jobs:
           echo 'FREETZ_HOSTTOOLS_DOWNLOAD=y'                                                          >> .config
           wget -q "${{ secrets.ACTIONS_CUSTOM }}cfg" -O cfg 2>/dev/null && mv cfg .config || rm -f cfg
           grep -q '^FREETZ_TYPE_' .config || echo 'FREETZ_TYPE_${{ matrix.fritz }}=y'                 >> .config
-          grep -q '^FREETZ_TYPE_FIRMWARE_' .config || echo 'FREETZ_TYPE_FIRMWARE_07_0X=y'             >> .config
+          grep -q '^FREETZ_TYPE_FIRMWARE_' .config || echo 'FREETZ_TYPE_FIRMWARE_06_2X=y'             >> .config
           echo "################################################################" && du .config && wc -l .config
 
       - name: addon
