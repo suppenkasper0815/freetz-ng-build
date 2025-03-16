@@ -62,8 +62,8 @@ jobs:
         id: args
         run: |
           export ARGS="$(for x in ${{ matrix.fritz }}; do echo "$x" | sed 's/^_/FREETZ_TYPE_/'; done)"
-          echo "args=$ARGS" >> $GITHUB_OUTPUT
-          echo "################################################################" && bash -c "echo ARGS=$ARGS"
+          echo "args='$ARGS'" >> $GITHUB_OUTPUT
+          echo "################################################################" && bash -c "echo ARGS='$ARGS'"
 
 #     - name: update
 #       run: apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade
