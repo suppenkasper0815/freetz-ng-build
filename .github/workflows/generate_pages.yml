@@ -2,7 +2,7 @@ name: generate_pages
 
 on:
   workflow_run:
-    workflows: [ generate_docs,generate_ftp,generate_osp,generate_juis,generate_juis-recache ]
+    workflows: [ generate_docs,avm_ftp,avm_osp,avm_juis,avm_juis-recache ]
     types:
       - completed
   push:
