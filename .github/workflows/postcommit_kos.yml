@@ -1,10 +1,10 @@
-name: generate_kos
+name: postcommit_kos
 
 on:
   push:
     branches: [ master ]
     paths:
-      - '.github/workflows/generate_kos.yml'
+      - '.github/workflows/postcommit_kos.yml'
       - 'config/.kos/generate.sh'
       - 'make/kernel/configs/avm/*'
   workflow_dispatch:

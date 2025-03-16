@@ -1,10 +1,10 @@
-name: generate_diffs
+name: postcommit_diffs
 
 on:
   push:
     branches: [ master ]
     paths:
-      - '.github/workflows/generate_diffs.yml'
+      - '.github/workflows/postcommit_diffs.yml'
       - 'make/kernel/configs/generate.sh'
       - 'make/kernel/configs/avm/*'
       - 'make/kernel/configs/freetz/*'
