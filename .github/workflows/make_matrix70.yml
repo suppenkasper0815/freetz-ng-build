@@ -9,6 +9,10 @@ on:
 #   - cron: '00 15 28 * *'
   workflow_dispatch:
 
+concurrency:
+  group: make_matrix
+  cancel-in-progress: false
+
 jobs:
   build:
     container:
