@@ -1,10 +1,10 @@
-name: generate_ftp
+name: avm_ftp
 
 on:
   push:
     branches: [ master ]
     paths:
-      - '.github/workflows/generate_ftp.yml'
+      - '.github/workflows/avm_ftp.yml'
       - 'docs/ftp/generate.sh'
   schedule:
     - cron: '00 15 * * 1-5'
