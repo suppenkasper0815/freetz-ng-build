@@ -170,15 +170,19 @@ jobs:
           libs) for x in $(sed -n 's/^[\tmenu]*config FREETZ_LIB_//p' make/libs/$pkg/Config.in); do grep -q "^FREETZ_LIB_$x=y" .config && BAD=n ; done ;;
           host-tools) BAD=n ;;
           esac
-          [ "$BAD" = "y" ] && echo "Could not enable precompiled" || su freetz -c "umask 0022 && make ${pkg}-precompiled"
+          echo "bad=$BAD" >> $GITHUB_OUTPUT
+          [ "$BAD" = "y" ] && echo "Could not enable precompiled" && exit
+          [ "$BAD" = "n" ] && su freetz -c "umask 0022 && make ${pkg}-precompiled"
 
       - name: result
+        if: steps.generate.outputs.bad == 'n'
         run: |
           pkg="$(echo ${{ steps.generate.outputs.pkg }} | sed 's/lib//')"
           p="$(find packages/target-*/${pkg}-*/root/                      ! -type d 2>/dev/null || true)"
           l="$(find packages/target-*/root/usr/lib/freetz/ -name "*${pkg}*" -type f 2>/dev/null || true)"
+          echo "################################################################"
           [ -z "$p$l" ] && echo "No binary output found." && exit
-          [ -n "$p$l" ] && echo "################################################################" && ls -al $p $l
+          [ -n "$p$l" ] && ls -al $p $l
 
 #     - name: vars
 #       id: vars
