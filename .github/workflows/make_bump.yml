@@ -170,7 +170,7 @@ jobs:
           libs) for x in $(sed -n 's/^[\tmenu]*config FREETZ_LIB_//p' make/libs/$pkg/Config.in); do grep -q "^FREETZ_LIB_$x=y" .config && BAD=n ; done ;;
           host-tools) BAD=n ;;
           esac
-          [ "$BAD" == "y" ] && echo "Could not enable precompiled" || su freetz -c "umask 0022 && make ${pkg}-precompiled"
+          [ "$BAD" = "y" ] && echo "Could not enable precompiled" || su freetz -c "umask 0022 && make ${pkg}-precompiled"
 
       - name: result
         run: |
