@@ -53,7 +53,7 @@ jobs:
           "_6670        _FIRMWARE_08_0X",
          ]
     runs-on: ubuntu-latest
-    if: github.repository == 'freetz-ng/freetz-ng'
+#   if: github.repository == 'freetz-ng/freetz-ng'
 
     env:
       CACHE_KEY: "make_freetz"
