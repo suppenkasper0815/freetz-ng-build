@@ -65,7 +65,7 @@ Latest changes
    * CA-bundle 2025-02-25
    * Dante 1.4.4
    * dtc 1.7.2
-   * Git 2.48.1
+   * Git 2.49.0
    * htop 1.0.3/3.4.0
    * ImageMagick 7.1.1-45
    * iptables 1.4.11.1/1.4.21/1.6.2/1.8.11
