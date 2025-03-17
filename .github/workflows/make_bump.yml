@@ -133,8 +133,8 @@ jobs:
       - name: precompiled
         id: precompiled
         run: |
-          PKG="$(git log --format=%B -n1 ${{ github.sha }} | sed -nr 's/^(add|bump|test) ([^ ,]*).*/\2/p')"
-          [ -z "$PKG" ] && echo "No add, bump or test." && exit
+          PKG="$(git log --format=%B -n1 ${{ github.sha }} | sed -nr 's/^(add|bump|fix|test) ([^ ,]*).*/\2/p')"
+          [ -z "$PKG" ] && echo "No add, bump, fix or test." && exit
           PKG="$(echo "$PKG" | tr '[:lower:]' '[:upper:]')"
           pkg="$(echo "$PKG" | tr '[:upper:]' '[:lower:]')"
           echo "pkg=$pkg" >> $GITHUB_OUTPUT
@@ -171,7 +171,7 @@ jobs:
           pkg="$(echo ${{ steps.precompiled.outputs.pkg }} | sed 's/lib//')"
           p="$(find packages/target-*/${pkg}-*/root/                      ! -type d 2>/dev/null || true)"
           l="$(find packages/target-*/root/usr/lib/freetz/ -name "*${pkg}*" -type f 2>/dev/null || true)"
-          [ -z "$p$l" ] && echo "No add, bump or test." && exit
+          [ -z "$p$l" ] && echo "No add, bump, fix or test." && exit
           echo "################################################################" && ls -al $p $l
 
 #     - name: vars
