@@ -143,11 +143,10 @@ jobs:
           [ -z "$TYPE" ] && echo -n 'Waiting ' && for x in $(seq 60); do echo -n '.' && sleep 1; done && echo ' done.' && git pull
           for x in pkgs libs host-tools; do [ -d make/$x/$pkg ] && TYPE=$x; done
           [ -z "$TYPE" ] && echo "No directory." && exit
-          sed "/_$pkg/d;/_$PKG/d"                                                                                                      -i .config
-          [ "$TYPE" = "pkgs" ] && echo "FREETZ_PACKAGE_$PKG=y"                                                                         >> .config
-          [ "$TYPE" = "libs" ] && echo "FREETZ_LIB_$pkg=y"                                                                             >> .config
-          [ "$TYPE" = "libs" ] && echo "FREETZ_LIB_lib$pkg=y"                                                                          >> .config
-          [ "$TYPE" = "libs" ] && for x in $(sed -n 's/\t *config FREETZ_LIB_//p' make/libs/$pkg/Config.in); do echo "FREETZ_LIB_$x=y" >> .config; done
+          sed "/_$pkg/d;/_$PKG/d"                                                                                                                   -i .config
+          [ "$TYPE" = "pkgs" ] && echo "FREETZ_PACKAGE_$PKG=y"                                                                                      >> .config
+          [ "$TYPE" = "pkgs" ] && echo "FREETZ_LIB_lib$pkg=y"                                                                                       >> .config
+          [ "$TYPE" = "libs" ] && for x in $(sed -n 's/^[\tmenu]*config FREETZ_LIB_//p' make/libs/$pkg/Config.in); do echo "FREETZ_LIB_$x=y"; done  >> .config
           echo "################################################################" && bash -c "echo pkg=$pkg" && bash -c "echo PKG=$PKG"
 
       - name: addon
@@ -165,7 +164,7 @@ jobs:
         run: |
           mkdir -p dl/ 2>/dev/null || true
           useradd freetz -s $(which bash) -d $(pwd) -M && chown freetz . -R
-          su freetz -c "umask 0022 && make olddefconfig && make tools ${{ steps.precompiled.outputs.pkg }}-precompiled ${{ steps.precompiled.outputs.pkg }}"
+          su freetz -c "umask 0022 && make olddefconfig && make ${{ steps.precompiled.outputs.pkg }}-precompiled"
 
       - name: result
         run: |
