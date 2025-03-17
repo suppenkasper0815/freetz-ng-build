@@ -1,8 +1,8 @@
-$(call PKG_INIT_LIB, $(if $(FREETZ_TARGET_GCC_5_1_MAX),2.49,2.75))
+$(call PKG_INIT_LIB, $(if $(FREETZ_TARGET_GCC_5_MAX),2.49,2.75))
 $(PKG)_SOURCE:=$(pkg)-$($(PKG)_VERSION).tar.xz
 $(PKG)_HASH_ABANDON:=e98bc4d93645082ec787730b0fd1a712b38882465c505777de17c338831ee181
 $(PKG)_HASH_CURRENT:=de4e7e064c9ba451d5234dd46e897d7c71c96a9ebf9a0c445bc04f4742d83632
-$(PKG)_HASH:=$($(PKG)_HASH_$(if $(FREETZ_TARGET_GCC_5_1_MAX),ABANDON,CURRENT))
+$(PKG)_HASH:=$($(PKG)_HASH_$(if $(FREETZ_TARGET_GCC_5_MAX),ABANDON,CURRENT))
 $(PKG)_SITE:=@KERNEL/linux/libs/security/linux-privs/libcap2
 ### VERSION:=2.49/2.75
 ### WEBSITE:=https://sites.google.com/site/fullycapable/
@@ -12,7 +12,7 @@ $(PKG)_SITE:=@KERNEL/linux/libs/security/linux-privs/libcap2
 
 $(PKG)_DEPENDS_ON += attr
 
-$(PKG)_CONDITIONAL_PATCHES+=$(if $(FREETZ_TARGET_GCC_5_1_MAX),abandon,current)
+$(PKG)_CONDITIONAL_PATCHES+=$(if $(FREETZ_TARGET_GCC_5_MAX),abandon,current)
 
 $(PKG)_BINARY:=$($(PKG)_DIR)/$(pkg)/$(pkg).so.$($(PKG)_VERSION)
 $(PKG)_STAGING_BINARY:=$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/$(pkg).so.$($(PKG)_VERSION)
