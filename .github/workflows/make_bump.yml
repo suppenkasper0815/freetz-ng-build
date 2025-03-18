@@ -3,8 +3,10 @@ name: make_bump
 on:
   push:
     branches: [ master ]
-#   paths:
-#     - 'docs/CHANGELOG.md'
+    paths:
+      - 'docs/CHANGELOG.md'
+      - 'make/pkgs/'
+      - 'make/libs/'
 # workflow_dispatch:
 
 concurrency:
