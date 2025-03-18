@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       bump:
-        description: "FREETZ_PACKAGE - input in lowercase (e.g. dropbear)"
+        description: "FREETZ_PACKAGE or FREETZ_LIB (e.g. dropbear)"
         required: true
         default: ""
 
