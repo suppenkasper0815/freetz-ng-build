@@ -70,6 +70,7 @@ Latest changes
    * htop 1.0.3/3.4.0
    * ImageMagick 7.1.1-45
    * iptables 1.4.11.1/1.4.21/1.6.2/1.8.11
+   * LCD4linux eadf4603
    * Lua 5.1.5/5.4.7
    * mc (Midnight Commander) 4.8.31/4.8.33
    * Minicom 2.10
