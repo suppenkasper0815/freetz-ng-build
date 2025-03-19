@@ -86,6 +86,7 @@ Latest changes
    * gettext 0.24
    * libcap 2.49/2.75
    * libpcap 1.1.1/1.10.5
+   * libusb1 1.0.23/1.0.28
    * libpng 1.6.47
    * pango 1.56.3
    * pixman 0.44.2
