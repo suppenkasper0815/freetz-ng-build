@@ -50,7 +50,7 @@ Latest changes
 ### devel
 
  - Build system:
-   * Ccache 4.11
+   * Ccache 4.11.1
 
  - Host tools:
    * ca-bundle 2025-02-25
