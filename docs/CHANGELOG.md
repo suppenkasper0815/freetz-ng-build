@@ -77,6 +77,7 @@ Latest changes
    * mc (Midnight Commander) 4.8.31/4.8.33
    * Minicom 2.10
    * Mosquitto 2.0.21
+   * NcFTP 3.2.8
    * Privoxy 4.0.0
    * socat 1.8.0.3
    * tcpdump 4.1.1/4.99.4
