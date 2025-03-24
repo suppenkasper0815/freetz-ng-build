@@ -94,6 +94,7 @@ Latest changes
    * libpcap 1.1.1/1.10.5
    * libusb1 1.0.23/1.0.28
    * libpng 1.6.47
+   * mbedTLS 2.7.19/2.28.10
    * pango 1.56.3
    * pixman 0.44.2
 
