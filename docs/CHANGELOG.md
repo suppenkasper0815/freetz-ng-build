@@ -82,7 +82,7 @@ Latest changes
    * Privoxy 4.0.0
    * socat 1.8.0.3
    * tcpdump 4.1.1/4.99.4
-   * Tor 0.4.8.15
+   * Tor 0.4.8.16
    * UnRAR 6.1.7/7.1.6
    * xsltproc 1.1.43
 
