@@ -48,8 +48,9 @@ $(PKG)_CONFIGURE_OPTIONS += --disable-seccomp
 $(PKG)_CONFIGURE_OPTIONS += --disable-systemd
 $(PKG)_CONFIGURE_OPTIONS += --disable-lzma
 $(PKG)_CONFIGURE_OPTIONS += --disable-zstd
-$(PKG)_CONFIGURE_OPTIONS += $(if $(FREETZ_PACKAGE_TOR_RELAY),,--disable-module-relay)
+$(PKG)_CONFIGURE_OPTIONS += $(if $(FREETZ_PACKAGE_TOR_RELAY),--enable-module-relay,--disable-module-relay)
 
+$(PKG)_REBUILD_SUBOPTS += FREETZ_PACKAGE_TOR_RELAY
 $(PKG)_REBUILD_SUBOPTS += FREETZ_OPENSSL_SHLIB_VERSION
 $(PKG)_REBUILD_SUBOPTS += FREETZ_PACKAGE_TOR_STATIC
 
@@ -65,6 +66,7 @@ $(PKG)_EXTRA_LDFLAGS += -Wl,--gc-sections
 ifeq ($(strip $(FREETZ_PACKAGE_TOR_STATIC)),y)
 $(PKG)_EXTRA_LDFLAGS += -static
 endif
+
 
 $(PKG_SOURCE_DOWNLOAD)
 $(PKG_UNPACKED)
@@ -84,6 +86,7 @@ $($(PKG)_TARGET_GEOIP): $($(PKG)_DEST_DIR)/usr/share/tor/%: $($(PKG)_DIR)/src/co
 $(pkg):
 
 $(pkg)-precompiled: $($(PKG)_TARGET_BINARY) $($(PKG)_TARGET_GEOIP)
+
 
 $(pkg)-clean:
 	-$(SUBMAKE) -C $(TOR_DIR) clean
