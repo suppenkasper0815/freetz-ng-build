@@ -64,7 +64,7 @@ Latest changes
  - Patches:
 
  - Packages:
-   * BIND 9.11.37/9.20.6
+   * BIND 9.11.37/9.20.7
    * CA-bundle 2025-02-25
    * Dante 1.4.4
    * Dnsmasq 2.80/2.91
