@@ -41,6 +41,7 @@ if FREETZ_PACKAGE_TOR
 
 	config FREETZ_PACKAGE_TOR_STATIC
 		bool "Link statically"
+		depends on FREETZ_OPENSSL_VERSION_1
 		default n
 		help
 			Build tor binary with statically linked libraries.

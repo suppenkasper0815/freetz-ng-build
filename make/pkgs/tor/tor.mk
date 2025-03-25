@@ -51,6 +51,7 @@ $(PKG)_CONFIGURE_OPTIONS += --disable-systemd
 $(PKG)_CONFIGURE_OPTIONS += --disable-lzma
 $(PKG)_CONFIGURE_OPTIONS += --disable-zstd
 $(PKG)_CONFIGURE_OPTIONS += $(if $(FREETZ_PACKAGE_TOR_RELAY),--enable-module-relay,--disable-module-relay)
+$(PKG)_CONFIGURE_OPTIONS += $(if $(FREETZ_PACKAGE_TOR_STATIC),--enable-static-tor)
 
 $(PKG)_REBUILD_SUBOPTS += FREETZ_PACKAGE_TOR_RELAY
 $(PKG)_REBUILD_SUBOPTS += FREETZ_OPENSSL_SHLIB_VERSION
@@ -62,12 +63,8 @@ $(PKG)_PATCH_POST_CMDS += touch -t 200001010000.00 ./configure.ac;
 # add EXTRA_(C|LD)FLAGS
 $(PKG)_PATCH_POST_CMDS += $(call PKG_ADD_EXTRA_FLAGS,(C|LD)FLAGS)
 
-$(PKG)_EXTRA_CFLAGS  += -ffunction-sections -fdata-sections -DDISABLE_ENGINES
-$(PKG)_EXTRA_LDFLAGS += -Wl,--gc-sections
-
-ifeq ($(strip $(FREETZ_PACKAGE_TOR_STATIC)),y)
-$(PKG)_EXTRA_LDFLAGS += -static
-endif
+$(PKG)_EXTRA_CFLAGS  := -ffunction-sections -fdata-sections -DDISABLE_ENGINES
+$(PKG)_EXTRA_LDFLAGS := -Wl,--gc-sections
 
 
 $(PKG_SOURCE_DOWNLOAD)
