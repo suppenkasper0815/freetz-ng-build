@@ -92,6 +92,7 @@ Latest changes
    * cairo 1.18.4
    * expat 2.7.0
    * gettext 0.24
+   * harfbuzz 11.0.0
    * libcap 2.49/2.75
    * libpcap 1.1.1/1.10.5
    * libusb1 1.0.23/1.0.28
