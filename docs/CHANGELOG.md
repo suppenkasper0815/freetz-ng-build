@@ -82,6 +82,7 @@ Latest changes
    * NcFTP 3.2.8
    * Privoxy 4.0.0
    * socat 1.8.0.3
+   * strace 4.9/5.0/6.14
    * tcpdump 4.1.1/4.99.4
    * Tor 0.4.8.16
    * UnRAR 6.1.7/7.1.6
