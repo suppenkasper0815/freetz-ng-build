@@ -29,6 +29,8 @@ $(PKG)_CONFIGURE_ENV += tor_cv_twos_complement=yes
 $(PKG)_CONFIGURE_ENV += tor_cv_cflags__fasynchronous_unwind_tables=no
 $(PKG)_CONFIGURE_ENV += tor_cv_cflags__fstack_protector_all=no
 $(PKG)_CONFIGURE_ENV += tor_cv_cflags__Wstack_protector=no
+$(PKG)_CONFIGURE_ENV += tor_cv_cflags__Winvalid_constexpr=no
+$(PKG)_CONFIGURE_ENV += tor_cv_cflags__Wvexing_parse=no
 $(PKG)_CONFIGURE_ENV += tor_cv_cflags___param_ssp_buffer_size_1=no
 $(PKG)_CONFIGURE_ENV += tor_cv_cflags__fPIE=no
 $(PKG)_CONFIGURE_ENV += tor_cv_ldflags__pie=no
