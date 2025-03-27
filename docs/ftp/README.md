@@ -40,6 +40,9 @@ Content: [FritzBox](#fritzbox) - [FritzDect](#fritzdect) - [FritzPowerline](#fri
  * fritzbox-5590-fiber/
    - deutschland: [FRITZ.Box_5590_Fiber-08.02.image](https://download.avm.de/fritzbox/fritzbox-5590-fiber/deutschland/fritz.os/FRITZ.Box_5590_Fiber-08.02.image)
    - other: [FRITZ.Box_5590_Fiber-08.02.image](https://download.avm.de/fritzbox/fritzbox-5590-fiber/other/fritz.os/FRITZ.Box_5590_Fiber-08.02.image)
+ * fritzbox-5690/
+   - deutschland: [FRITZ.Box_5690-08.04.image](https://download.avm.de/fritzbox/fritzbox-5690/deutschland/fritz.os/FRITZ.Box_5690-08.04.image)
+   - other: [FRITZ.Box_5690-08.04.image](https://download.avm.de/fritzbox/fritzbox-5690/other/fritz.os/FRITZ.Box_5690-08.04.image)
  * fritzbox-5690-pro/
    - deutschland: [FRITZ.Box_5690_Pro-08.03.image](https://download.avm.de/fritzbox/fritzbox-5690-pro/deutschland/fritz.os/FRITZ.Box_5690_Pro-08.03.image)
    - other: [FRITZ.Box_5690_Pro-08.01.image](https://download.avm.de/fritzbox/fritzbox-5690-pro/other/fritz.os/FRITZ.Box_5690_Pro-08.01.image)
