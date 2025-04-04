@@ -76,7 +76,7 @@ Latest changes
    * ImageMagick 7.1.0-62/7.1.1-46
    * iptables 1.4.11.1/1.4.21/1.6.2/1.8.11
    * LCD4linux eadf4603
-   * Lighttpd 1.4.78
+   * Lighttpd 1.4.79
    * Lua 5.1.5/5.4.7
    * mc (Midnight Commander) 4.8.31/4.8.33
    * Minicom 2.10
