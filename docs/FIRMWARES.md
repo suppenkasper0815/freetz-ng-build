@@ -434,7 +434,7 @@ Currently supported devices and firmwares
   - 256.07.57 rev109901 {ALL} [MOVE21NL1]
   - 256.08.02 rev117981 {ALL} [Smart24 P1 NL1]
 * __Fritz!Box Fon WLAN 7530 AX B__
-  - 278.07.90 rev115731 {ALL} [Smart24 P1 FCS] (Inhaus)
+  - 278.08.02 rev119131 {ALL} [Smart24 P1 FCS]
 * __Fritz!Box Fon WLAN 7560__
   - 149.06.53 rev41227 {GER}
   - 149.06.83 rev43670 {GER}
