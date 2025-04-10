@@ -99,6 +99,7 @@ Latest changes
    * gettext 0.24
    * harfbuzz 11.0.1
    * libcap 2.49/2.75
+   * libffi 3.4.8
    * libpcap 1.1.1/1.10.5
    * libusb1 1.0.23/1.0.28
    * libpng 1.6.47
