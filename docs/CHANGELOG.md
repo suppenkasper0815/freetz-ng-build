@@ -91,6 +91,7 @@ Latest changes
    * strace 4.9/5.0/6.14
    * tcpdump 4.1.1/4.99.4
    * Tor 0.4.8.16
+   * uMurmur 0.2.20/0.3.1
    * UnRAR 6.1.7/7.1.6
    * xsltproc 1.1.43
 
