@@ -58,6 +58,7 @@ Latest changes
    * fakeroot 1.37.1.1
    * gperf 3.2
    * kconfig 6.14
+   * libtool 2.5.4
    * meson 1.7.2
    * ncftp 3.2.9
    * pkgconf 2.4.3
