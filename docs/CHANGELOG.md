@@ -64,6 +64,7 @@ Latest changes
    * pkgconf 2.4.3
    * python 3.12.10
    * python3-packaging 24.2
+   * sfk 2.0.0.3
    * u-boot 2025.04
 
  - AVM sources:
