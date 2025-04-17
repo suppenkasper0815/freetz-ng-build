@@ -61,6 +61,7 @@ Latest changes
    * meson 1.7.2
    * ncftp 3.2.9
    * python 3.12.10
+   * python3-packaging 24.2
 
  - AVM sources:
    * 3000 ax  8.02 - 4.4.271
