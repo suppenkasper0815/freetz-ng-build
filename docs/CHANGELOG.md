@@ -60,6 +60,7 @@ Latest changes
    * kconfig 6.14
    * meson 1.7.2
    * ncftp 3.2.9
+   * pkgconf 2.4.3
    * python 3.12.10
    * python3-packaging 24.2
    * u-boot 2025.04
