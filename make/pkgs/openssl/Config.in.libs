@@ -34,7 +34,7 @@ config FREETZ_LIB_libssl
 
 choice
 	prompt "OpenSSL version"
-	default FREETZ_OPENSSL_VERSION_35
+#	default FREETZ_OPENSSL_VERSION_35
 	default FREETZ_OPENSSL_VERSION_30
 	default FREETZ_OPENSSL_VERSION_11
 	default FREETZ_OPENSSL_VERSION_10
