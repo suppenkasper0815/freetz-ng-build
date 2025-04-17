@@ -797,7 +797,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[ser2net 3.5.4 - DEPRECATED](../../docs/make/ser2net.md)<a id='ser2net'></a>**<br>
     Ser2net is a program for allowing network connections to serial ports. It supports RFC 2217 (remote control of serial port parameters), but you must have a complient client.
 
-  * **[sfk: Swiss File Knife 1.9.8.2](../../docs/make/sfk.md)<a id='sfk'></a>**<br>
+  * **[SFK 2.0.0.3](../../docs/make/sfk.md)<a id='sfk'></a>**<br>
     Swiss File Knife - A Command Line Tools Collection This packages provides the freeware version of SFK, see http://stahlworks.com/dev/swiss-file-knife.html for further information
 
   * **<u>sg3_utils 1.26 (binary only) - DEPRECATED</u><a id='sg3-utils'></a>**<br>
