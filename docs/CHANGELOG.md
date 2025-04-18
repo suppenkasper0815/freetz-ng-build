@@ -111,6 +111,7 @@ Latest changes
    * cairo 1.18.4
    * expat 2.7.1
    * gettext 0.24
+   * gmp 6.3.0
    * harfbuzz 11.1.0
    * libcap 2.49/2.75
    * libffi 3.4.8
