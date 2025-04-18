@@ -52,7 +52,14 @@ sudo dnf -y update && sudo systemctl daemon-reload
 
  - Fedora 42 64-Bit:
 ```
-sudo dnf -y install %%Fedora42%%
+sudo dnf -y install \
+  bc binutils bison bzip2 ccache cmake curl ecj elfutils-libelf-devel flex gcc gcc-c++ gettext \
+  git glib2-devel glibc-devel glibc-devel.i686 gnutls-devel ImageMagick inkscape \
+  javapackages-tools kmod libacl-devel libattr-devel libcap-devel libgcc libglade2-devel libstdc++-devel \
+  libtool libuuid-devel libxml2-devel libzstd-devel make ncurses ncurses-devel ncurses-term \
+  netcat net-tools openssl openssl-devel openssl-devel-engine patch patchutils perl \
+  perl-String-CRC32 pkgconfig pv qt5-qtbase-devel readline-devel rpcgen rsync sharutils sqlite sqlite-devel \
+  subversion texinfo unar util-linux wget xz zlib-ng-devel
 ```
 
  - Fedora 41 64-Bit:
@@ -138,8 +145,8 @@ sudo yum -y install ncurses-devel.i686 glibc-devel.i686 libgcc.i686
 ```
 sudo yum -y install \
   autoconf automake binutils bison bzip2 ecj flex gcc gcc-c++ gettext git glib2-devel \
-  glibc-devel.i686 ImageMagick libacl-devel libattr-devel libcap-devel libtool make ncurses-devel patch \
-  perl perl-String-CRC32 pkgconfig subversion texinfo wget zlib-devel
+  ImageMagick libacl-devel libattr-devel libcap-devel libtool make ncurses-devel patch perl \
+  perl-String-CRC32 pkgconfig subversion texinfo wget zlib-devel
 ```
 
 ### Debian
