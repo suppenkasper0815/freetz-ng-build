@@ -50,6 +50,11 @@ aarch64
 sudo dnf -y update && sudo systemctl daemon-reload
 ```
 
+ - Fedora 42 64-Bit:
+```
+sudo dnf -y install %%Fedora42%%
+```
+
  - Fedora 41 64-Bit:
 ```
 sudo dnf -y install \
@@ -133,8 +138,8 @@ sudo yum -y install ncurses-devel.i686 glibc-devel.i686 libgcc.i686
 ```
 sudo yum -y install \
   autoconf automake binutils bison bzip2 ecj flex gcc gcc-c++ gettext git glib2-devel \
-  ImageMagick libacl-devel libattr-devel libcap-devel libtool make ncurses-devel patch perl \
-  perl-String-CRC32 pkgconfig subversion texinfo wget zlib-devel
+  glibc-devel.i686 ImageMagick libacl-devel libattr-devel libcap-devel libtool make ncurses-devel patch \
+  perl perl-String-CRC32 pkgconfig subversion texinfo wget zlib-devel
 ```
 
 ### Debian
