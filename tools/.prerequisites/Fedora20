@@ -10,7 +10,6 @@ gcc-c++
 gettext
 git
 glib2-devel
-glibc-devel.i686
 ImageMagick
 libacl-devel
 libattr-devel
