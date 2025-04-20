@@ -8,18 +8,24 @@ $(PKG)_SITE:=https://www.curl.se/ca,https://curl.haxx.se/ca
 $(PKG)_BINARY:=$($(PKG)_DIR)/cacert.pem
 $(PKG)_TARGET_BINARY:=$(TOOLS_DIR)/cacert.pem
 
+#
+
 
 define $(PKG)_CUSTOM_UNPACK
-        cp -fa $(DL_DIR)/$(CA_BUNDLE_HOST_SOURCE) $(CA_BUNDLE_HOST_BINARY)
+	cp -fa $(DL_DIR)/$(CA_BUNDLE_HOST_SOURCE) $(CA_BUNDLE_HOST_BINARY)
 endef
 
+#
 $(TOOLS_SOURCE_DOWNLOAD)
+#
 $(TOOLS_UNPACKED)
 
 $($(PKG)_BINARY): $($(PKG)_DIR)/.unpacked
 
 $($(PKG)_TARGET_BINARY): $($(PKG)_BINARY)
 	$(INSTALL_FILE)
+
+#
 
 $(pkg)-precompiled: $($(PKG)_TARGET_BINARY)
 
