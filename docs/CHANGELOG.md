@@ -61,7 +61,7 @@ Latest changes
    * gperf 3.2
    * kconfig 6.14
    * libtool 2.5.4
-   * meson 1.7.2
+   * meson 1.8.0
    * ncftp 3.2.9
    * ncurses 6.5-20250419
    * openssl 3.5.0
