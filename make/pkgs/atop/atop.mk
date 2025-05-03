@@ -5,6 +5,7 @@ $(PKG)_SITE:=https://www.atoptool.nl/download
 ### WEBSITE:=https://www.atoptool.nl/
 ### MANPAGE:=https://linux.die.net/man/1/atop
 ### CHANGES:=https://www.atoptool.nl/downloadatop.php
+### CVSREPO:=https://github.com/Atoptool/atop
 ### SUPPORT:=fda77
 
 $(PKG)_BINARY:=$($(PKG)_DIR)/atop
