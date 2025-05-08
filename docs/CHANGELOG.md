@@ -104,6 +104,7 @@ Latest changes
    * OpenVPN 2.4.12/2.5.11/2.6.14
    * Privoxy 4.0.0
    * SFK 2.0.0.3
+   * Smartmontools 7.5
    * socat 1.8.0.3
    * strace 4.9/5.0/6.14
    * tcpdump 4.1.1/4.99.4
