@@ -62,7 +62,7 @@ Latest changes
    * kconfig 6.14
    * libtool 2.5.4
    * meson 1.8.0
-   * ncftp 3.2.9
+   * ncftp 3.3.0
    * ncurses 6.5-20250419
    * openssl 3.5.0
    * pkgconf 2.4.3
