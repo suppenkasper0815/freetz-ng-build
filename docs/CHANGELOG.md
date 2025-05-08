@@ -85,6 +85,7 @@ Latest changes
    * CA-bundle 2025-02-25
    * Dante 1.4.4
    * Dnsmasq 2.80/2.91
+   * Dropbear 2025.88
    * dtc 1.7.2
    * Git 2.49.0
    * htop 1.0.3/3.4.1
