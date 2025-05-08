@@ -539,6 +539,9 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **<u>python-pycrypto: pycrypto 2.6.1 - DEPRECATED</u><a id='python-pycrypto'></a>**<br>
     A collection of both secure hash functions (such as MD5 and SHA), and various encryption algorithms (AES, DES, IDEA, RSA, ElGamal, etc.).
 
+  * **<u>python-pycryptodome: PyCryptodome</u><a id='python-pycryptodome'></a>**<br>
+    PyCryptodome is a self-contained Python package of low-level cryptographic primitives. It's a fork of PyCrypto that has been enhanced for modern systems.
+
   * **[python-pycurl: pycurl 7.43.0 - DEPRECATED](python-pycurl.md)<a id='python-pycurl'></a>**<br>
     PycURL is a Python interface to libcurl. PycURL can be used to fetch objects identified by a URL from a Python program.
 
