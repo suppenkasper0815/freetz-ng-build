@@ -721,7 +721,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **<u>python-mysql-connector: mysql-connector 8.0.21 - DEPRECATED</u><a id='python-mysql-connector'></a>**<br>
     Python MySQL Connector.
 
-  * **[python-pycrypto: PyCrypto 2.6.1 - DEPRECATED](../../docs/make/python-pycrypto.md)<a id='python-pycrypto'></a>**<br>
+  * **[python-pycrypto: PyCrypto 2.7a1 - DEPRECATED](../../docs/make/python-pycrypto.md)<a id='python-pycrypto'></a>**<br>
     A collection of both secure hash functions (such as MD5 and SHA), and various encryption algorithms (AES, DES, IDEA, RSA, ElGamal, etc.).
 
   * **<u>python-pycryptodome: PyCryptodome 3.22.0</u><a id='python-pycryptodome'></a>**<br>
