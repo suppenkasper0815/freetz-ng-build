@@ -104,6 +104,7 @@ Latest changes
    * OpenVPN 2.4.12/2.5.11/2.6.14
    * Privoxy 4.0.0
    * python-Cffi 1.15.1
+   * python-PyCrypto 2.7a1
    * python-PyCryptodome 3.22.0
    * SFK 2.0.0.3
    * Smartmontools 7.5
