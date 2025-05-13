@@ -1,7 +1,7 @@
 $(call PKG_INIT_BIN, 2.7a1)
 $(PKG)_SOURCE:=pycrypto-$($(PKG)_VERSION).tar.gz
 $(PKG)_HASH:=ee4013e297e6a5da5c9f49a3e38dc8a5c62ae816377aa766c9e87474197be3b9
-$(PKG)_SITE:=http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto
+$(PKG)_SITE:=https://ftp.dlitz.net/pub/dlitz/crypto/pycrypto
 ### WEBSITE:=https://www.pycrypto.org/
 ### MANPAGE:=https://www.pycrypto.org/doc/
 ### CHANGES:=https://github.com/pycrypto/pycrypto/tags
