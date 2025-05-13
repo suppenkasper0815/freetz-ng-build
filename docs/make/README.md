@@ -525,6 +525,9 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **<u>python-bjoern: bjoern 1.3.4 - DEPRECATED</u><a id='python-bjoern'></a>**<br>
     A screamingly fast Python WSGI server written in C.
 
+  * **<u>python-cffi: Cffi</u><a id='python-cffi'></a>**<br>
+    A Foreign Function Interface package for calling C libraries from Python. http://cffi.readthedocs.io/
+
   * **<u>python-cheetah: cheetah 2.4.4 - DEPRECATED</u><a id='python-cheetah'></a>**<br>
 
   * **<u>python-imaging-library: Imaging Library 1.1.7 - DEPRECATED</u><a id='python-imaging-library'></a>**<br>
