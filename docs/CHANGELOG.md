@@ -103,6 +103,8 @@ Latest changes
    * OpenSSL 0.9.8zh/1.0.2u/1.1.1w/3.0.16/3.5.0
    * OpenVPN 2.4.12/2.5.11/2.6.14
    * Privoxy 4.0.0
+   * python-Cffi 1.15.1
+   * python-PyCryptodome 3.22.0
    * SFK 2.0.0.3
    * Smartmontools 7.5
    * socat 1.8.0.3
