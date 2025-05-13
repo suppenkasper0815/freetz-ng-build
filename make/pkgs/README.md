@@ -707,8 +707,8 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **<u>python-bjoern: bjoern 1.3.4 - DEPRECATED</u><a id='python-bjoern'></a>**<br>
     A screamingly fast Python WSGI server written in C.
 
-  * **<u>python-cffi: Cffi</u><a id='python-cffi'></a>**<br>
-    A Foreign Function Interface package for calling C libraries from Python. http://cffi.readthedocs.io/
+  * **<u>python-cffi: Cffi 1.15.1</u><a id='python-cffi'></a>**<br>
+    A Foreign Function Interface package for calling C libraries from Python.
 
   * **<u>python-cheetah: cheetah 2.4.4 - DEPRECATED</u><a id='python-cheetah'></a>**<br>
 
@@ -724,7 +724,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **<u>python-pycrypto: pycrypto 2.6.1 - DEPRECATED</u><a id='python-pycrypto'></a>**<br>
     A collection of both secure hash functions (such as MD5 and SHA), and various encryption algorithms (AES, DES, IDEA, RSA, ElGamal, etc.).
 
-  * **<u>python-pycryptodome: PyCryptodome</u><a id='python-pycryptodome'></a>**<br>
+  * **<u>python-pycryptodome: PyCryptodome 3.22.0</u><a id='python-pycryptodome'></a>**<br>
     PyCryptodome is a self-contained Python package of low-level cryptographic primitives. It's a fork of PyCrypto that has been enhanced for modern systems.
 
   * **[python-pycurl: pycurl 7.43.0 - DEPRECATED](../../docs/make/python-pycurl.md)<a id='python-pycurl'></a>**<br>
