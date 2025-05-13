@@ -119,7 +119,7 @@ Latest changes
    * expat 2.7.1
    * gettext 0.24
    * gmp 6.3.0
-   * harfbuzz 11.2.0
+   * harfbuzz 11.2.1
    * libcap 2.49/2.75
    * libdeflate 1.24
    * libffi 3.4.8
