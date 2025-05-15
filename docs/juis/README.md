@@ -81,7 +81,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
 ### FOS-Labor
  - HWR 226: [FRITZ.Box_7590-08.10-120696-LabBETA.image](http://download.avm.de/labor/Smart24P2/7590/FRITZ.Box_7590-08.10-120696-LabBETA.image)
  - HWR 227: [FRITZ.Box_4040-07.59.image](http://download.avm.de/firmware/4040/347831279831289213893218/FRITZ.Box_4040-07.59.image)
- - HWR 233: [FRITZ.Box_6591_Cable-08.10-120434-LabBETA.image](http://download.avm.de/labor/Smart24P2/6591Cable/FRITZ.Box_6591_Cable-08.10-120434-LabBETA.image)
+ - HWR 233: [FRITZ.Box_6591_Cable-08.10-120711-LabBETA.image](http://download.avm.de/labor/Smart24P2/6591Cable/FRITZ.Box_6591_Cable-08.10-120711-LabBETA.image)
  - HWR 239: [FRITZ.Box_7583-07.39-103075-LabBETA.image](http://download.avm.de/labor/MOVE21/7583/FRITZ.Box_7583-07.39-103075-LabBETA.image)
  - HWR 258: [FRITZ.Box_6850_5G-08.02-118870-LabBETA.image](http://download.avm.de/labor/Smart24P1NL1/68505G/FRITZ.Box_6850_5G-08.02-118870-LabBETA.image)
  - HWR 259: [FRITZ.Box_7590_AX-08.10-120699-LabBETA.image](http://download.avm.de/labor/Smart24P2/7590AX/FRITZ.Box_7590_AX-08.10-120699-LabBETA.image)
