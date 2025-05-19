@@ -62,6 +62,7 @@ Latest changes
    * iPerf3 3.3/3.19
    * kconfig 6.14
    * libtool 2.5.4
+   * m4 1.4.20
    * meson 1.8.0
    * ncftp 3.3.0
    * ncurses 6.5-20250419
