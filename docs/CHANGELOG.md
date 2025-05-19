@@ -56,7 +56,7 @@ Latest changes
  - Host tools:
    * ca-bundle 2025-02-25
    * dtc 1.7.2
-   * fakeroot 1.37.1.1
+   * fakeroot 1.37.1.2
    * gmp 6.3.0
    * gperf 3.2
    * kconfig 6.14
