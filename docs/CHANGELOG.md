@@ -107,7 +107,7 @@ Latest changes
    * Privoxy 4.0.0
    * python-Cffi 1.15.1
    * python-PyCrypto 2.7a1
-   * python-PyCryptodome 3.22.0
+   * python-PyCryptodome 3.23.0
    * SFK 2.0.0.3
    * Smartmontools 7.5
    * socat 1.8.0.3

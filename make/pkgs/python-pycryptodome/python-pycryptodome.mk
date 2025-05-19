@@ -1,7 +1,7 @@
-$(call PKG_INIT_BIN, 3.22.0)
+$(call PKG_INIT_BIN, 3.23.0)
 $(PKG)_SOURCE:=pycryptodome-$($(PKG)_VERSION).tar.gz
 $(PKG)_SITE:=https://files.pythonhosted.org/packages/source/p/pycryptodome
-$(PKG)_HASH:=fd7ab568b3ad7b77c908d7c3f7e167ec5a8f035c64ff74f10d47a4edd043d723
+$(PKG)_HASH:=447700a657182d60338bab09fdb27518f8856aecd80ae4c6bdddb67ff5da44ef
 ### WEBSITE:=https://www.pycryptodome.org/
 ### MANPAGE:=https://www.pycryptodome.org/src/api
 ### CHANGES:=https://www.pycryptodome.org/src/changelog
