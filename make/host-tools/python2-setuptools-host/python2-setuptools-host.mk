@@ -21,7 +21,7 @@ $(TOOLS_UNPACKED)
 
 $($(PKG)_DIR)/.installed: $($(PKG)_DIR)/.unpacked
 	for x in $(PYTHON2_SETUPTOOLS_HOST_DIRECTORIES); do \
-	echo cp -fa $${x} $(dir $(PYTHON2_SETUPTOOLS_HOST_TARGET_DIRECTORY)); \
+	cp -fa $${x} $(dir $(PYTHON2_SETUPTOOLS_HOST_TARGET_DIRECTORY)); \
 	done
 	@touch $@
 
