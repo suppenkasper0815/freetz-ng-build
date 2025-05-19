@@ -1,4 +1,5 @@
 $(call PKG_INIT_BIN,1.15.1)
+# Since version 1.16 only Python3 is supported!
 $(PKG)_SOURCE:=cffi-$($(PKG)_VERSION).tar.gz
 $(PKG)_SITE:=https://files.pythonhosted.org/packages/source/c/cffi
 $(PKG)_HASH:=d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9
