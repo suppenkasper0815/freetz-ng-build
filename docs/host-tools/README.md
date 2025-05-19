@@ -108,7 +108,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
   * **[python3 3.12.10](python3-host.md)<a id='python3-host'></a>**<br>
 
-  * **[python3-packaging 24.2](python3-packaging-host.md)<a id='python3-packaging-host'></a>**<br>
+  * **[python3-packaging 25.0](python3-packaging-host.md)<a id='python3-packaging-host'></a>**<br>
 
 ### S
 
