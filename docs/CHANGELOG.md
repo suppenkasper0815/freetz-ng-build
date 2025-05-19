@@ -72,7 +72,7 @@ Latest changes
    * precompiled toolchains r25866
    * python 3.12.10
    * python2-setuptools 44.1.1
-   * python3-packaging 24.2
+   * python3-packaging 25.0
    * sfk 2.0.0.3
    * u-boot 2025.04
 
