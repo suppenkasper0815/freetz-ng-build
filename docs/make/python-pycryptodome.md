@@ -1,4 +1,4 @@
-# PyCryptodome 3.22.0
+# PyCryptodome 3.23.0
  - Homepage: [https://www.pycryptodome.org/](https://www.pycryptodome.org/)
  - Manpage: [https://www.pycryptodome.org/src/api](https://www.pycryptodome.org/src/api)
  - Changelog: [https://www.pycryptodome.org/src/changelog](https://www.pycryptodome.org/src/changelog)
