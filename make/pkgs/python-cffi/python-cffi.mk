@@ -10,6 +10,7 @@ $(PKG)_HASH:=d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)$(PYTHON_SITE_PKG_DIR)/_cffi_backend.so
 
 $(PKG)_DEPENDS_ON += python
+$(PKG)_DEPENDS_ON += python2-host python2-setuptools-host
 
 $(PKG)_REBUILD_SUBOPTS += FREETZ_PACKAGE_PYTHON_STATIC
 
@@ -18,8 +19,6 @@ $(PKG_UNPACKED)
 $(PKG_CONFIGURED_NOP)
 
 $($(PKG)_TARGET_BINARY): $($(PKG)_DIR)/.configured
-	$(HOST_TOOLS_DIR)/usr/bin/python2 -m ensurepip || true
-	$(HOST_TOOLS_DIR)/usr/bin/python2 -m pip install --no-cache-dir setuptools
 	$(call Build/PyMod/PKG, PYTHON_CFFI, , CFLAGS="$(TARGET_CFLAGS) -I$(TARGET_TOOLCHAIN_STAGING_DIR)/include/python2.7" CPPFLAGS="$(TARGET_CFLAGS) -I$(TARGET_TOOLCHAIN_STAGING_DIR)/include/python2.7" PYTHON_INCDIR="$(TARGET_TOOLCHAIN_STAGING_DIR)/include/python2.7" TARGET_ARCH_BE="$(TARGET_ARCH_BE)" PYTHONHOME=$(HOST_TOOLS_DIR)/usr)
 	touch -c $@
 
