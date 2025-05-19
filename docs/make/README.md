@@ -299,7 +299,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[iodine 0.7.0 - DEPRECATED](iodine.md)<a id='iodine'></a>**<br>
     iodine lets you tunnel IPv4 data through a DNS server. This can be usable in different situations where internet access is firewalled, but DNS queries are allowed.
 
-  * **[iPerf3 3.3/3.18 (binary only)](iperf.md)<a id='iperf'></a>**<br>
+  * **[iPerf3 3.3/3.19 (binary only)](iperf.md)<a id='iperf'></a>**<br>
     iPerf3 is a tool for active measurements of the maximum achievable bandwidth on IP networks. It supports tuning of various parameters related to timing, buffers and protocols (TCP, UDP, SCTP with IPv4 and IPv6). For each test it reports the bandwidth, loss, and other parameters. S. https://github.com/esnet/iperf for more details.
 
   * **<u>IPsec-tools 0.7.2 - DEPRECATED</u><a id='ipsec-tools'></a>**<br>
@@ -542,7 +542,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[python-pycrypto: PyCrypto 2.7a1 - DEPRECATED](python-pycrypto.md)<a id='python-pycrypto'></a>**<br>
     A collection of both secure hash functions (such as MD5 and SHA), and various encryption algorithms (AES, DES, IDEA, RSA, ElGamal, etc.).
 
-  * **<u>python-pycryptodome: PyCryptodome 3.22.0</u><a id='python-pycryptodome'></a>**<br>
+  * **[python-pycryptodome: PyCryptodome 3.22.0](python-pycryptodome.md)<a id='python-pycryptodome'></a>**<br>
     PyCryptodome is a self-contained Python package of low-level cryptographic primitives. It's a fork of PyCrypto that has been enhanced for modern systems.
 
   * **[python-pycurl: pycurl 7.43.0 - DEPRECATED](python-pycurl.md)<a id='python-pycurl'></a>**<br>
