@@ -7,8 +7,6 @@ $(PKG)_HASH:=447700a657182d60338bab09fdb27518f8856aecd80ae4c6bdddb67ff5da44ef
 ### CHANGES:=https://www.pycryptodome.org/src/changelog
 ### CVSREPO:=https://github.com/Legrandin/pycryptodome/
 
-$(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)$(PYTHON_SITE_PKG_DIR)/Crypto/Hash/_SHA256.so
-
 $(PKG)_DEPENDS_ON += python
 
 $(PKG)_REBUILD_SUBOPTS += FREETZ_PACKAGE_PYTHON_STATIC
@@ -18,16 +16,16 @@ $(PKG_SOURCE_DOWNLOAD)
 $(PKG_UNPACKED)
 $(PKG_CONFIGURED_NOP)
 
-$($(PKG)_TARGET_BINARY): $($(PKG)_DIR)/.configured
+$($(PKG)_DIR)/.compiled: $($(PKG)_DIR)/.configured
 	$(call Build/PyMod/PKG, PYTHON_PYCRYPTODOME, , PYTHONHOME=$(HOST_TOOLS_DIR)/usr)
-	touch -c $@
 
 $(pkg):
 
-$(pkg)-precompiled: $($(PKG)_TARGET_BINARY)
+$(pkg)-precompiled: $($(PKG)_DIR)/.compiled
 
 
 $(pkg)-clean:
+	$(RM) $(PYTHON_PYCRYPTODOME_DIR)/{.configured,.compiled}
 	$(RM) -r $(PYTHON_PYCRYPTODOME_DIR)/build
 
 $(pkg)-uninstall:
