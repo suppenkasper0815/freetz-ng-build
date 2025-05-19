@@ -84,6 +84,7 @@ Latest changes
    * BIND 9.11.37/9.20.7
    * CA-bundle 2025-02-25
    * Dante 1.4.4
+   * dehydrated 0.7.2
    * Dnsmasq 2.80/2.91
    * Dropbear 2025.88
    * dtc 1.7.2

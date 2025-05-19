@@ -1,6 +1,6 @@
-$(call PKG_INIT_BIN, 0.7.1)
+$(call PKG_INIT_BIN, 0.7.2)
 $(PKG)_SOURCE:=$(pkg)-$($(PKG)_VERSION).tar.gz
-$(PKG)_HASH:=4d28a0598230b276b316070ce16be7d9ab984f3bdef482acf0bc24fcdcc0d0b0
+$(PKG)_HASH:=7ea5a75bfcdf04bbb6ef88d03f89dec8101a2d3ea1dd467d8c42cbb0339ed5cb
 $(PKG)_SITE:=https://github.com/dehydrated-io/dehydrated/releases/download/v$($(PKG)_VERSION)
 ### WEBSITE:=https://dehydrated.io/
 ### MANPAGE:=https://github.com/dehydrated-io/dehydrated/wiki
