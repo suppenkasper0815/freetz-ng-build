@@ -8,6 +8,7 @@ $(PKG)_HASH:=447700a657182d60338bab09fdb27518f8856aecd80ae4c6bdddb67ff5da44ef
 ### CVSREPO:=https://github.com/Legrandin/pycryptodome/
 
 $(PKG)_DEPENDS_ON += python
+$(PKG)_DEPENDS_ON += python2-host
 
 
 $(PKG_SOURCE_DOWNLOAD)
@@ -16,6 +17,7 @@ $(PKG_CONFIGURED_NOP)
 
 $($(PKG)_DIR)/.compiled: $($(PKG)_DIR)/.configured
 	$(call Build/PyMod/PKG, PYTHON_PYCRYPTODOME, , PYTHONHOME=$(HOST_TOOLS_DIR)/usr)
+	@touch $@
 
 $(pkg):
 
