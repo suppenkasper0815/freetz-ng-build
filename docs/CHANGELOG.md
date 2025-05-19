@@ -70,6 +70,7 @@ Latest changes
    * precompiled host-tools 2025-04-18
    * precompiled toolchains r25866
    * python 3.12.10
+   * python2-setuptools 44.1.1
    * python3-packaging 24.2
    * sfk 2.0.0.3
    * u-boot 2025.04
