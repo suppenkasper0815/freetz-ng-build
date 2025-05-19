@@ -55,6 +55,7 @@ Latest changes
 
  - Host tools:
    * ca-bundle 2025-02-25
+   * cmake 4.0.2
    * dtc 1.7.2
    * fakeroot 1.37.1.2
    * gmp 6.3.0
