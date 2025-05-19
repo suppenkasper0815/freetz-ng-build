@@ -66,7 +66,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
 ### M
 
-  * **[m4 1.4.19](m4-host.md)<a id='m4-host'></a>**<br>
+  * **[m4 1.4.20](m4-host.md)<a id='m4-host'></a>**<br>
 
   * **[make 4.4.1](make-host.md)<a id='make-host'></a>**<br>
 
