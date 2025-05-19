@@ -2,6 +2,10 @@ $(call PKG_INIT_BIN,1.15.1)
 $(PKG)_SOURCE:=cffi-$($(PKG)_VERSION).tar.gz
 $(PKG)_SITE:=https://files.pythonhosted.org/packages/source/c/cffi
 $(PKG)_HASH:=d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9
+### WEBSITE:=https://cffi.readthedocs.io
+### MANPAGE:=https://cffi.readthedocs.io/en/stable/overview.html
+### CHANGES:=https://github.com/python-cffi/cffi/releases
+### CVSREPO:=https://github.com/python-cffi/cffi
 
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)$(PYTHON_SITE_PKG_DIR)/_cffi_backend.so
 
