@@ -750,7 +750,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
 ### V
 
-  * **[Vim 9.1.0181 (binary only)](vim.md)<a id='vim'></a>**<br>
+  * **[Vim 9.1.1275 (binary only)](vim.md)<a id='vim'></a>**<br>
     An improved version of VI
 
   * **[VLMCSD svn1113](vlmcsd.md)<a id='vlmcsd'></a>**<br>
