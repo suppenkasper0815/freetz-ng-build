@@ -54,7 +54,7 @@ Latest changes
    * uClibc 0.9.28/0.9.29/0.9.32.1/0.9.33.2/1.0.14/1.0.52
 
  - Host tools:
-   * ca-bundle 2025-02-25
+   * ca-bundle 2025-05-20
    * cmake 4.0.2
    * dtc 1.7.2
    * fakeroot 1.37.1.2
