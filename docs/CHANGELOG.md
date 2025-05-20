@@ -114,6 +114,7 @@ Latest changes
    * python-Cffi 1.15.1
    * python-PyCrypto 2.7a1
    * python-PyCryptodome 3.23.0
+   * Screen 4.9.1/5.0.1
    * SFK 2.0.0.3
    * Smartmontools 7.5
    * socat 1.8.0.3
