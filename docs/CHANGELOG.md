@@ -125,6 +125,7 @@ Latest changes
    * uMurmur 0.2.20/0.3.1
    * Unbound 1.23.0
    * UnRAR 6.1.7/7.1.6
+   * usb.ids 635738b64e
    * xsltproc 1.1.43
 
  - Libraries:
