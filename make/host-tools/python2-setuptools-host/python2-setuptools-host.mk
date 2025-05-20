@@ -18,7 +18,7 @@ $(TOOLS_SOURCE_DOWNLOAD)
 $(TOOLS_UNPACKED)
 
 $($(PKG)_DIR)/.installed: $($(PKG)_DIR)/.unpacked
-	$(HOST_TOOLS_DIR)/usr/bin/python2 -m pip install --no-cache-dir $(PYTHON2_SETUPTOOLS_HOST_DIR)
+	$(HOST_TOOLS_DIR)/usr/bin/python2 -m pip install --no-cache-dir $(PYTHON2_SETUPTOOLS_HOST_DIR)/ $(SILENT)
 	@touch $@
 
 $(pkg)-precompiled: $($(PKG)_DIR)/.installed
@@ -31,6 +31,6 @@ $(pkg)-dirclean:
 
 $(pkg)-distclean: $(pkg)-dirclean
 	$(RM) -r $(PYTHON2_SETUPTOOLS_HOST_TARGET_DIRECTORY)/setuptools/
-	$(RM) -r $(PYTHON2_SETUPTOOLS_HOST_TARGET_DIRECTORY)/setuptools-*.egg-info
+	$(RM) -r $(PYTHON2_SETUPTOOLS_HOST_TARGET_DIRECTORY)/setuptools-*.egg-info/
 
 $(TOOLS_FINISH)
