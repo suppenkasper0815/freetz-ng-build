@@ -8,8 +8,8 @@ $(PKG)_HASH:=d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9
 ### CHANGES:=https://github.com/python-cffi/cffi/releases
 ### CVSREPO:=https://github.com/python-cffi/cffi
 
+$(PKG)_DEPENDS_ON += python2-setuptools-host
 $(PKG)_DEPENDS_ON += python
-$(PKG)_DEPENDS_ON += python2-host python2-setuptools-host
 
 
 $(PKG_SOURCE_DOWNLOAD)
