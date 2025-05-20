@@ -240,6 +240,7 @@ Latest changes
    * Unbound 1.22.0
    * VLMCSD svn1113
    * Wget 1.25.0
+   * Whois 5.6.1
    * xsltproc 1.1.42
    * XZ 5.6.4
 
