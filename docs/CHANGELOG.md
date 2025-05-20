@@ -126,6 +126,7 @@ Latest changes
    * Unbound 1.23.0
    * UnRAR 6.1.7/7.1.6
    * usb.ids 635738b64e
+   * Vim 9.1.1275
    * xsltproc 1.1.43
 
  - Libraries:
