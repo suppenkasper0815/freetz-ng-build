@@ -106,6 +106,7 @@ Latest changes
    * Mosquitto 2.0.21
    * Nano 8.4
    * NcFTP 3.3.0
+   * Nmap 4.76/5.51/7.97
    * OpenSSH 9.3p2/10.0p1
    * OpenSSL 0.9.8zh/1.0.2u/1.1.1w/3.0.16/3.5.0
    * OpenVPN 2.4.12/2.5.11/2.6.14
