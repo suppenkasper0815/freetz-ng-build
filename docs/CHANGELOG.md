@@ -71,7 +71,7 @@ Latest changes
    * pkgconf 2.4.3
    * precompiled host-tools 2025-05-19
    * precompiled toolchains r25866
-   * python 3.12.10
+   * python 3.13.3
    * python2-setuptools 44.1.1
    * python3-packaging 25.0
    * sfk 2.0.0.3
