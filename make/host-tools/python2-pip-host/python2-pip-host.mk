@@ -12,14 +12,14 @@ $(PKG)_SITE:=https://distfiles.macports.org/py-pip,https://files.pythonhosted.or
 $(PKG)_DEPENDS_ON+=python2-host
 
 $(PKG)_DIRECTORY:=$($(PKG)_DIR)/src/pip
-$(PKG)_TARGET_DIRECTORY:=$(HOST_TOOLS_DIR)/usr/lib/python$(call GET_MAJOR_VERSION,$(PYTHON2_HOST_VERSION))/site-packages/pip
+$(PKG)_TARGET_DIRECTORY:=$(HOST_TOOLS_DIR)/usr/lib/python$(call GET_MAJOR_VERSION,$(PYTHON2_HOST_VERSION))/site-packages
 
 
 $(TOOLS_SOURCE_DOWNLOAD)
 $(TOOLS_UNPACKED)
 
 $($(PKG)_DIR)/.installed: $($(PKG)_DIR)/.unpacked
-	cp -fa $(PYTHON2_PIP_HOST_DIRECTORY) $(dir $(PYTHON2_PIP_HOST_TARGET_DIRECTORY))
+	cp -fa $(PYTHON2_PIP_HOST_DIRECTORY) $(PYTHON2_PIP_HOST_TARGET_DIRECTORY)
 	@touch $@
 
 $(pkg)-precompiled: $($(PKG)_DIR)/.installed
@@ -31,6 +31,6 @@ $(pkg)-dirclean:
 	$(RM) -r $(PYTHON2_PIP_HOST_DIR)
 
 $(pkg)-distclean: $(pkg)-dirclean
-	$(RM) -r $(PYTHON2_PIP_HOST_TARGET_DIRECTORY)
+	$(RM) -r $(PYTHON2_PIP_HOST_TARGET_DIRECTORY)/pip
 
 $(TOOLS_FINISH)
