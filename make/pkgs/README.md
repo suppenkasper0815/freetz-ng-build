@@ -982,7 +982,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[UnRAR 6.1.7/7.1.6 (binary only)](../../docs/make/unrar.md)<a id='unrar'></a>**<br>
     Unarchiver for .rar files
 
-  * **[usbids: usb.ids c70eea490a](../../docs/make/usbids.md)<a id='usbids'></a>**<br>
+  * **[usbids: usb.ids 635738b64e](../../docs/make/usbids.md)<a id='usbids'></a>**<br>
     This package provides up-to-date version of the usb.ids file needed by many usb related packages.
 
   * **[util-linux 2.27.1 (binary only) - DEPRECATED](../../docs/make/util-linux.md)<a id='util-linux'></a>**<br>
