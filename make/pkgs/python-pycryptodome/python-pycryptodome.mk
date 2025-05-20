@@ -8,7 +8,7 @@ $(PKG)_HASH:=447700a657182d60338bab09fdb27518f8856aecd80ae4c6bdddb67ff5da44ef
 ### CVSREPO:=https://github.com/Legrandin/pycryptodome/
 
 $(PKG)_DEPENDS_ON += python
-$(PKG)_DEPENDS_ON += python2-host
+$(PKG)_DEPENDS_ON += python2-setuptools-host
 
 
 $(PKG_SOURCE_DOWNLOAD)
