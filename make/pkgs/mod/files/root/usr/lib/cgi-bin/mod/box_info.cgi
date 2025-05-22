@@ -202,7 +202,7 @@ sec_end
 
 sec_begin "$(lang de:"MTDs" en:"MTDs")"
 echo "<dl class='info'>"
-echo "<pre class='log ${class:-small}'>"
+echo "<pre class='log.unlimited'>"
 (
 mlen() { local x=$3; while [ ${#x} -lt $1 ]; do x="$2$x"; done; echo "$x"; }
 echo "Device   Bytes       Kilobytes     Megabytes   Name"
