@@ -185,7 +185,22 @@ fi
 sec_end
 
 
-sec_begin "$(lang de:"MTDs" en:"NetworkMTDs
+sec_begin "$(lang de:"Firmware" en:"Firmware")"
+
+echo "<dl class='info'>"
+echo "<dt>Firmware$(lang de:"" en:" ")version</dt><dd>${CONFIG_VERSION_MAJOR}.${CONFIG_VERSION}"
+echo "<dt>AVM-Revision</dt><dd>$avm_revision</dd>"
+echo "<dt>$(lang de:"Sprache" en:"Language")</dt><dd>$Language</dd>"
+echo "</dl>"
+
+echo "<dl class='info'>"
+echo "<dt>$(lang de:"Erstellungsdatum" en:"Compilation date") (AVM)</dt><dd>$avm_date</dd>"
+echo "</dl>"
+
+sec_end
+
+
+sec_begin "$(lang de:"MTDs" en:"MTDs
 echo "<dl class='info'>"
 echo "<pre class='log ${class:-small}'>"
 (
@@ -258,6 +273,7 @@ fi
 sec_end
 fi
 
+
 avsar_ver=/proc/avalanche/avsar_ver
 if [ -r "$avsar_ver" ]; then
 	sec_begin "$(lang de:"DSL-Treiber und -Hardware" en:"DSL drivers and hardware")"
@@ -265,19 +281,6 @@ if [ -r "$avsar_ver" ]; then
 	sec_end
 fi
 
-sec_begin "$(lang de:"Firmware" en:"Firmware")"
-
-echo "<dl class='info'>"
-echo "<dt>Firmware$(lang de:"" en:" ")version</dt><dd>${CONFIG_VERSION_MAJOR}.${CONFIG_VERSION}"
-echo "<dt>AVM-Revision</dt><dd>$avm_revision</dd>"
-echo "<dt>$(lang de:"Sprache" en:"Language")</dt><dd>$Language</dd>"
-echo "</dl>"
-
-echo "<dl class='info'>"
-echo "<dt>$(lang de:"Erstellungsdatum" en:"Compilation date") (AVM)</dt><dd>$avm_date</dd>"
-echo "</dl>"
-
-sec_end
 
 sec_begin "$(lang de:"Eigenschaften" en:"Properties")"
 	echo -n '<div class="textwrapper"><textarea style="margin-top:6px;" name="content" rows="5" cols="10" wrap="off" readonly>'
