@@ -221,6 +221,14 @@ echo "</dl>"
 sec_end
 
 
+avsar_ver=/proc/avalanche/avsar_ver
+if [ -r "$avsar_ver" ]; then
+	sec_begin "$(lang de:"DSL-Treiber und -Hardware" en:"DSL drivers and hardware")"
+		echo "<pre class='plain'>$(cat "$avsar_ver")</pre>"
+	sec_end
+fi
+
+
 donet_val="$(cgi_param net)"
 if [ "$donet_val" != "0" ]; then
 sec_begin "$(lang de:"Netzwerk" en:"Network")"
@@ -271,14 +279,6 @@ fi
 [ "${donet_val#0}" == "$donet_val" ] && echo "<form class='btn' method='post'><input type='reset' value='$donet_msg' onclick='window.location=\"$(href status mod box_info)$donet_arg\" '></form>"
 
 sec_end
-fi
-
-
-avsar_ver=/proc/avalanche/avsar_ver
-if [ -r "$avsar_ver" ]; then
-	sec_begin "$(lang de:"DSL-Treiber und -Hardware" en:"DSL drivers and hardware")"
-		echo "<pre class='plain'>$(cat "$avsar_ver")</pre>"
-	sec_end
 fi
 
 
