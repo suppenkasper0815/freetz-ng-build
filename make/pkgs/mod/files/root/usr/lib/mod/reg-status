@@ -20,7 +20,7 @@ fi
 
 [ "$mode" = reload ] && modunreg status mod flash_info
 if [ "$MOD_SHOW_FLASH_INFO" = yes -a -r "/usr/lib/cgi-bin/mod/flash_info.cgi" ]; then
-	modreg status mod "$(lang de:"Flash" en:"Flash")" flash_info
+	modreg status mod "$(lang de:"Flashspeicher" en:"Flash storage")" flash_info
 fi
 
 [ "$mode" = reload ] && modunreg status mod info
