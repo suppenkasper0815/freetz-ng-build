@@ -221,6 +221,17 @@ echo "</dl>"
 sec_end
 
 
+if which ubinfo >/dev/null; then
+sec_begin "$(lang de:"UBI-Info" en:"UBI-Info")"
+echo "<dl class='info'>"
+echo "<pre class='log.unlimited'>"
+ubinfo -a | html
+echo '</pre>'
+echo "</dl>"
+sec_end
+fi
+
+
 avsar_ver=/proc/avalanche/avsar_ver
 if [ -r "$avsar_ver" ]; then
 	sec_begin "$(lang de:"DSL-Treiber und -Hardware" en:"DSL drivers and hardware")"
