@@ -99,6 +99,7 @@ Latest changes
    * htop 1.0.3/3.4.1
    * ImageMagick 7.1.0-62/7.1.1-46
    * iptables 1.4.11.1/1.4.21/1.6.2/1.8.11
+   * jq 1.8.0
    * LCD4linux eadf4603
    * Lighttpd 1.4.79
    * Lua 5.1.5/5.4.7
