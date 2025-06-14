@@ -41,10 +41,10 @@ $(PKG)_FEATURES_TO_DISABLE += MBEDTLS_XTEA_C
 $(PKG)_FEATURES_TO_DISABLE += $(if $(FREETZ_LIB_libmbedcrypto_WITH_BLOWFISH),,MBEDTLS_BLOWFISH_C)
 $(PKG)_FEATURES_TO_DISABLE += $(if $(FREETZ_LIB_libmbedcrypto_WITH_GENRSA),,MBEDTLS_GENPRIME)
 
-$(PKG)_CONFIGH_2.7  :=include/mbedtls/config.h
-$(PKG)_CONFIGH_2.28 :=include/mbedtls/config.h
-$(PKG)_CONFIGH_3.6  :=include/mbedtls/mbedtls_config.h
-$(PKG)_CONFIGH:=$($(PKG)_CONFIGH_$(call GET_MAJOR_VERSION,$($(PKG)_VERSION)))
+$(PKG)_CONFIGH_2.7  :=config.h
+$(PKG)_CONFIGH_2.28 :=config.h
+$(PKG)_CONFIGH_3.6  :=mbedtls_config.h
+$(PKG)_CONFIGH:=include/mbedtls/$($(PKG)_CONFIGH_$(call GET_MAJOR_VERSION,$($(PKG)_VERSION)))
 
 # Don't use -D/-U to define/undefine required symbols, patch config.h instead. The installed headers must contain properly defined symbols.
 $(PKG)_PATCH_POST_CMDS += $(SED) -ri $(foreach f,$(MBEDTLS_FEATURES_TO_DISABLE),-e 's|^([ \t]*$(_hash)define[ \t]+$(f)[ \t]*)$$$$|/* \1 */|') $($(PKG)_CONFIGH)
