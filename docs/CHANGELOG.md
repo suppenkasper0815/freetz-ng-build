@@ -140,7 +140,7 @@ Latest changes
    * harfbuzz 11.2.1
    * libcap 2.49/2.75
    * libdeflate 1.24
-   * libffi 3.4.8
+   * libffi 3.5.1
    * libpcap 1.1.1/1.10.5
    * libusb1 1.0.23/1.0.29
    * libuv 1.44.2/1.51.0
