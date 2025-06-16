@@ -1,4 +1,4 @@
-# readline: libreadline (libreadline.so) $(if $(FREETZ_LIB_libreadline_VERSION_ABANDON),6.3,8.2)
+# readline: libreadline (libreadline.so) 6.3-p8/8.2
  - Homepage: [https://tiswww.case.edu/php/chet/readline/rltop.html](https://tiswww.case.edu/php/chet/readline/rltop.html)
  - Manpage: [https://tiswww.case.edu/php/chet/readline/readline.html](https://tiswww.case.edu/php/chet/readline/readline.html)
  - Changelog: [https://tiswww.case.edu/php/chet/readline/NEWS](https://tiswww.case.edu/php/chet/readline/NEWS)
