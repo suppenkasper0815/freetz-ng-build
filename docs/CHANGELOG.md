@@ -102,7 +102,7 @@ Latest changes
    * jq 1.8.0
    * LCD4linux eadf4603
    * Lighttpd 1.4.79
-   * Lua 5.1.5/5.4.7
+   * Lua 5.1.5/5.4.8
    * mc (Midnight Commander) 4.8.31/4.8.33
    * Minicom 2.10
    * Mosquitto 2.0.21
