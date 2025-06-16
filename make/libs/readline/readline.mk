@@ -17,6 +17,8 @@ $(PKG)_TARGET_HISTORY_BINARY:=$($(PKG)_TARGET_DIR)/libhistory.so.$($(PKG)_LIB_VE
 
 $(PKG)_DEPENDS_ON += ncurses
 
+$(PKG)_CONDITIONAL_PATCHES+=$(if $(FREETZ_LIB_libreadline_VERSION_ABANDON),abandon,current)
+
 $(PKG)_CONFIGURE_ENV += bash_cv_func_ctype_nonascii=no
 $(PKG)_CONFIGURE_ENV += bash_cv_func_sigsetjmp=present
 $(PKG)_CONFIGURE_ENV += bash_cv_func_strcoll_broken=no
