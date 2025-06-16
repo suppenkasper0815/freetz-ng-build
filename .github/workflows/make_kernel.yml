@@ -96,7 +96,7 @@ jobs:
       image: ghcr.io/freetz-ng/firmware
     needs: matrizifizieren
     strategy:
-      max-parallel: 15
+      max-parallel: 25
       fail-fast: false
       matrix:
         fritz: ${{ fromJson(needs.matrizifizieren.outputs.matrix) }}
@@ -105,7 +105,7 @@ jobs:
 #   if: github.repository == 'freetz-ng/freetz-ng'
 
     env:
-      CACHE_KEY: "${{ github.workflow }}--${{ matrix.fritz.fos }}--${{ matrix.fritz.box }}"
+      CACHE_KEY: "${{ github.workflow }}--${{ matrix.fritz.box }}"
     steps:
 
 #     - name: update
@@ -177,7 +177,7 @@ jobs:
           echo 'FREETZ_DOWNLOAD_TOOLCHAIN=y'                                                          >> .config
           echo 'FREETZ_HOSTTOOLS_DOWNLOAD=y'                                                          >> .config
           wget -q "${{ secrets.ACTIONS_CUSTOM }}cfg" -O cfg 2>/dev/null && mv cfg .config || rm -f cfg
-          grep -q '^FREETZ_TYPE_' .config || echo 'FREETZ_TYPE_$BOX=y'                                >> .config
+          grep -q '^FREETZ_TYPE_' .config || echo "FREETZ_TYPE_$BOX=y"                                >> .config
           grep -q '^FREETZ_TYPE_FIRMWARE_' .config || echo "FREETZ_TYPE_FIRMWARE_$FOS=y"              >> .config
           echo "################################################################" && du .config && wc -l .config
 
