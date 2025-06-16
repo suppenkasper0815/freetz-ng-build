@@ -52,7 +52,7 @@ jobs:
           name="$(echo "$line" | sed -r 's/^FREETZ_TYPE_([^ ]*) *FREETZ_TYPE_FIRMWARE_([^ ]*).*/\1 - \2/g')"; \
           tcs="$(echo "$line" | sed -r 's/^FREETZ_TYPE_([^ ]*) *FREETZ_TYPE_FIRMWARE_([^ ]*)(.*)/_\1 _\2\3/g')"; \
           echo -n "$matrix{pkg:\"$pkg\",name:\"$name\",tcs:\"$tcs\"},"; done | \
-          sed 's/^{/matrix=\[&/;s/,$/&\]/' >> $GITHUB_OUTPUT
+          sed 's/^/matrix=\[/;s/$/\]/' >> $GITHUB_OUTPUT
 
       - name: vars
         run: |

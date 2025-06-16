@@ -78,7 +78,7 @@ jobs:
               sed "s/[&| \t\\()]//g" | sed -rn "s/^FREETZ_TYPE_//p" | grep -vE "^(LANG_|xxxx$)" | sort | \
               while read -r box; do echo -n "$matrix{fos:\"$fos\",box:\"$box\"},"; done; \
           done | \
-          sed 's/^{/matrix=\[&/;s/,$/&\]/' >> $GITHUB_OUTPUT
+          sed 's/^/matrix=\[/;s/$/\]/' >> $GITHUB_OUTPUT
 
       - name: vars
         run: |
