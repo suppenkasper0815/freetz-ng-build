@@ -5,6 +5,7 @@ $(PKG)_HASH_ABANDON:=56ba6071b9462f980c5a72ab0023893b65ba6debb4eeb475d7a563dc65c
 $(PKG)_HASH_CURRENT:=3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
 $(PKG)_HASH:=$($(PKG)_HASH_$(if $(FREETZ_LIB_libreadline_VERSION_ABANDON),ABANDON,CURRENT))
 $(PKG)_SITE:=@GNU/$(pkg)
+### VERSION:=6.3-p8/8.2
 ### WEBSITE:=https://tiswww.case.edu/php/chet/readline/rltop.html
 ### MANPAGE:=https://tiswww.case.edu/php/chet/readline/readline.html
 ### CHANGES:=https://tiswww.case.edu/php/chet/readline/NEWS

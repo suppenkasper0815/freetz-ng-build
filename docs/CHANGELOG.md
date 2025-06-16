@@ -149,6 +149,7 @@ Latest changes
    * mbedTLS 2.7.19/2.28.10/3.6.3.1
    * pango 1.56.3
    * pixman 0.44.2
+   * readline 6.3-p8/8.2
 
  - Firmware updates:
    * Please see [FIRMWARES](FIRMWARES.md) for the list of currently supported devices and firmwares.
