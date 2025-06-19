@@ -1,5 +1,5 @@
 menuconfig FREETZ_PACKAGE_NANO
-	bool "Nano 8.4 (binary only)"
+	bool "Nano 8.5 (binary only)"
 	depends on FREETZ_KERNEL_VERSION_2_6_28_MIN
 	select FREETZ_LIB_libncurses if !FREETZ_PACKAGE_NANO_UTF8
 	default n
@@ -59,7 +59,7 @@ if FREETZ_PACKAGE_NANO
 			Show a list of available keyboard commands via Ctrl-G or F1. As the
 			name suggests, this is quite helpful. ;-)
 
-			This option adds about 8.4 KB to the minimum 182 KB of Nano's non-tiny binary.
+			This option adds about 8.5 KB to the minimum 182 KB of Nano's non-tiny binary.
 
 			If you are unfamiliar with Nano and Pico and have some space left
 			in the firmware image, you are recommended choosing this option anyway.
