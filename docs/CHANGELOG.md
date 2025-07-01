@@ -68,7 +68,7 @@ Latest changes
    * ninja 1.13.0
    * ncftp 3.3.0
    * ncurses 6.5-20250419
-   * openssl 3.5.0
+   * openssl 3.5.1
    * pkgconf 2.4.3
    * precompiled host-tools 2025-05-20
    * precompiled toolchains r25866
