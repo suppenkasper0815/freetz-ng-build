@@ -22,7 +22,7 @@ $(PKG)_BINARIES_TARGET_DIR := $($(PKG)_BINARIES:%=$($(PKG)_DEST_DIR)/usr/bin/%)
 
 $(PKG)_LIBNAMES_SHORT      := avcodec avdevice avfilter avformat avutil postproc swresample swscale
 
-ifeq ($(FREETZ_PACKAGE_FFMPEG_VERSION_ABANDON),y)
+ifeq ($(strip $(FREETZ_PACKAGE_FFMPEG_VERSION_ABANDON)),y)
 $(PKG)_LIBVERSIONS_MAJOR   := 61      61       10       61       59     58       5          8
 $(PKG)_LIBVERSIONS_MINOR   := 19.101  3.100    4.100    7.100    39.100 3.100    3.100      3.100
 else
