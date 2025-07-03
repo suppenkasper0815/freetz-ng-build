@@ -76,6 +76,7 @@ Latest changes
    * python2-pip 20.3.4
    * python2-setuptools 44.1.1
    * python3-packaging 25.0
+   * python3-jsonschema 4.24.0
    * sfk 2.0.0.3
    * u-boot 2025.04
 
