@@ -127,6 +127,7 @@ jobs:
         run: |
           echo "################################################################"
           su freetz -c "umask 0022 && tools/dl-toolchains_eval $ACTIONS_VERSION all | grep -v '"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"'"
+          ls -al dl/*-shared-glibc.tar.lzma && du -sh dl/*-shared-glibc.tar.lzma
 
 #     - name: cleanup
 #       env:
