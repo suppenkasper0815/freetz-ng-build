@@ -69,6 +69,7 @@ TOOLS_CONDITIONAL+=python3-jsonschema-host
 TOOLS_CONDITIONAL+=python3-packaging-host
 TOOLS_CONDITIONAL+=python3-pip-host
 TOOLS_CONDITIONAL+=python3-referencing-host
+TOOLS_CONDITIONAL+=python3-setuptools-host
 TOOLS_CONDITIONAL+=scons-host
 TOOLS_CONDITIONAL+=wget-host
 TOOLS_CONDITIONAL+=xdelta-host
