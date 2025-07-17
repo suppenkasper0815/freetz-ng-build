@@ -94,7 +94,7 @@ Latest changes
    * Atop 2.11.1
    * BIND 9.11.37/9.20.10
    * CA-bundle 2025-07-15
-   * Curl 8.14.1
+   * Curl 8.15.0
    * Dante 1.4.4
    * dehydrated 0.7.2
    * Dnsmasq 2.80/2.91
