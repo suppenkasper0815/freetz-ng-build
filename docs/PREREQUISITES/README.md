@@ -9,6 +9,7 @@ Mit `tools/prerequisites` können die Pakete auch installiert werden.
   - [Fedora](#fedora)
   - [Debian](#debian)
   - [Devuan](#devuan)
+  - [LMDE](#lmde)
   - [Ubuntu](#ubuntu)
   - [Mint](#mint)
   - [Kali](#kali)
@@ -198,6 +199,10 @@ sudo apt -y install \
 
 ### Devuan
 Devuan wurde schon erfolgreich zum Bauen benutzt. Einfach die Pakete installieren, die für Debian vorgeschlagen werden.
+
+
+### LMDE
+LMDE (Linux Mint Debian Edition) wurde schon erfolgreich zum Bauen benutzt. Einfach die Pakete installieren, die für Debian vorgeschlagen werden.
 
 
 ### Ubuntu
