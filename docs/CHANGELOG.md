@@ -65,7 +65,7 @@ Latest changes
    * libtool 2.5.4
    * m4 1.4.20
    * meson 1.8.2
-   * ninja 1.13.0
+   * ninja 1.13.1
    * ncftp 3.3.0
    * ncurses 6.5-20250419
    * openssl 3.5.1
