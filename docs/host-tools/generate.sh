@@ -22,7 +22,7 @@ for dir in $(find "$INPWD" -maxdepth 1 -mindepth 1 -type d | sort); do
 	while [ "0$(awk 'END{print NR}' "$MDPWD/$tool.md" 2>/dev/null)" -lt 2 ]; do echo >> "$MDPWD/$tool.md"; done
 	sed "1c# $itm" -i "$MDPWD/$tool.md"
 
-	sed "/^ - Maintainer: .*$/d" -i "$MDPWD/$tool.md"
+	sed "/^  - Maintainer: .*$/d" -i "$MDPWD/$tool.md"
 	lnk="$(sed -n "s/^### SUPPORT:= *//p" $dir/*.mk)"
 	case "$lnk" in
 		X)	lnk="" ;;
@@ -32,11 +32,11 @@ for dir in $(find "$INPWD" -maxdepth 1 -mindepth 1 -type d | sort); do
 	[ -n "$lnk" ] && sed "2i\  - Maintainer: $lnk" -i "$MDPWD/$tool.md"
 
 	lnk="https://github.com/Freetz-NG/freetz-ng/tree/master/make/host-tools/$tool/"
-	sed "/^ - Host-Tool: \[.*)$/d" -i "$MDPWD/$tool.md"
+	sed "/^  - Host-Tool: \[.*)$/d" -i "$MDPWD/$tool.md"
 	sed "2i\  - Host-Tool: \[${lnk:44}\]($lnk)" -i "$MDPWD/$tool.md"
 
 	for pair in CVSREPO°Repository CHANGES°Changelog MANPAGE°Manpage WEBSITE°Homepage; do
-		sed "/^ - ${pair#*°}: \[.*)$/d" -i "$MDPWD/$tool.md"
+		sed "/^  - ${pair#*°}: \[.*)$/d" -i "$MDPWD/$tool.md"
 		lnk="$(sed -n "s/^### ${pair%%°*}:= *//p" $INPWD/$tool/*.mk 2>/dev/null)"
 		[ -n "$lnk" ] && sed "2i\  - ${pair#*°}: \[$lnk\]($lnk)" -i "$MDPWD/$tool.md"
 	done
