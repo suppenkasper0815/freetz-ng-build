@@ -3,6 +3,7 @@ Was man tun muss um Freetz auf seine Fritzbox zu bekommen.
 
 ### Installationswege
 Es gibt 3 Wege ein Firmware auf eine Fritzbox zu installieren:
+
   * __AVM Webinterface__:<br>
     Es können alle AVM und Freetz Images installiert werden - gilt ab etwa Fritzos 6.5 nicht mehr.<br>
     Seitdem prüft AVM die Signatur der hochgeladenen Datei. Diese Signatur kann nur von AVM erstellt werden und es werden keine modifizierten Images akzeptiert.<br>
@@ -57,7 +58,7 @@ Verfügbare Scripte und Tools zum Flashen über den Bootloader:
 
   * Gen 4: __uimg-boot__<a id='uimg'></a><br>
    Neue Cable Fritzboxen mit Puma7, zb 6591 & 6660
-    - `tools/push_firmware` von Freetz-NG<br>
+    - `tools/push_firmware` von Freetz-NG
     - [uimg-tool](https://bitbucket.org/fesc2000/uimg-tool.git) von fesc2000 zum ent-/packen, wird in Freetz-NG genutzt
     -  Infos zur BIOS-Version bei [ffritz von fesc2000](https://bitbucket.org/fesc2000/ffritz/src/6591/README-6591.md)
 
