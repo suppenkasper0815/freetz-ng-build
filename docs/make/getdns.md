@@ -7,9 +7,8 @@
  - Maintainer: [@fda77](https://github.com/fda77)
 
 Mit Getdns  kann die Namensauflösung via DNS-over-TLS erfolgen.<br>
-<br>
-<a href='../screenshots/000-PKG_getdns.png'><img src='../screenshots/000-PKG_getdns_md.png'></a>
-<br>
+
+[![screenshot](../screenshots/000-PKG_getdns_md.png)](../screenshots/000-PKG_getdns.png)
 
  * In Dnsmasq muss Getdns als "Upstream Nameserver" eingetragen werden, z.B. ```127.0.0.1#11153```
 

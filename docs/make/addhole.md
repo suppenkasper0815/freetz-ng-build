@@ -3,9 +3,8 @@
  - Maintainer: [@fda77](https://github.com/fda77)
 
 Addhole ist eine Erweiterung für Dnsmasq.<br>
-<br>
-<a href='../screenshots/000-PKG_addhole.png'><img src='../screenshots/000-PKG_addhole_md.png'></a>
-<br>
+
+[![screenshot](../screenshots/000-PKG_addhole_md.png)](../screenshots/000-PKG_addhole.png)
 
  - Mit Addhole können Listen mit Hostnamen in Dnsmasq eingebunden werdend die blockiert werden. Es gibt Listen mit Hosts die Werbung, Malware, Viren etc verbreiten.
    Das Package ist vergleichbar mit Pi-Hole, nur ohne Webinterface mit den Zugriffsstatistiken und ohne ein zusätzliches Gerät.

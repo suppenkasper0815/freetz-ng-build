@@ -3,9 +3,8 @@
  - Maintainer: [@fda77](https://github.com/fda77)
 
 Mit AVM-portfw können (ausschliesslich) Ports der Fritz!Box selbst für Zugriff aus dem Internet freigegeben werden.<br>
-<br>
-<a href='../screenshots/000-PKG_avm-portfw.png'><img src='../screenshots/000-PKG_avm-portfw_md.png'></a>
-<br>
+
+[![screenshot](../screenshots/000-PKG_avm-portfw_md.png)](../screenshots/000-PKG_avm-portfw.png)
 
 Dazu wird ```internet_forwardrules``` verwendet, nur für IPv4-Freigaben. Zu finden im menuconfig unter ```packages > webif```.
 Da die ```ar7.cfg``` bearbeitet wird, sollte man vorher ein komplettes Backup anlegen - EXPERIMENTAL!

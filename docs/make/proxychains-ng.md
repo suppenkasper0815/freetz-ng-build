@@ -8,11 +8,9 @@
 
 Mit ProxyChains-NG kann (fast) jedes Programm einen Proxy verwenden.<br>
 
-<br>
-<a href='../screenshots/000-PKG_proxychains-ng.png'><img src='../screenshots/000-PKG_proxychains-ng_md.png'></a>
+[![screenshot](../screenshots/000-PKG_proxychains-ng_md.png)](../screenshots/000-PKG_proxychains-ng.png)
 &emsp;
-<a href='../screenshots/000-PKG_proxychains-ng_terminal.png'><img src='../screenshots/000-PKG_proxychains-ng_terminal_md.png'></a>
-<br>
+[![screenshot](../screenshots/000-PKG_proxychains-ng_terminal_md.png)](../screenshots/000-PKG_proxychains-ng_terminal.png)
 
 Es werden HTTP, SOCKS4a und SOCKS5 Proxies unterstützt, sowie DNS-Tunneling.
 
