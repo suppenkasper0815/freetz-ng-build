@@ -4,8 +4,9 @@ ARG BUILD_USER=builduser
 RUN \
     apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade \
  && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    git bash locales python3 python-is-python3 python3-pip \
- && pip install --break-system-packages mkdocs mkdocs-material \
+    git bash locales \
+    python3 python-is-python3 python3-pip \
+ && pip install  mkdocs mkdocs-material \
  && DEBIAN_FRONTEND=noninteractive apt-get -y clean \
  && rm -rf /var/lib/apt/lists/* \
  && locale-gen en_US.utf8 && locale-gen de_DE.UTF-8 && update-locale \
