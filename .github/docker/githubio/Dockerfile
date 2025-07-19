@@ -7,6 +7,7 @@ RUN \
     git bash locales \
     python3 python-is-python3 python3-pip \
  && pip install  mkdocs mkdocs-material \
+ && rm -rf $HOME/.cache/pip/ \
  && DEBIAN_FRONTEND=noninteractive apt-get -y clean \
  && rm -rf /var/lib/apt/lists/* \
  && locale-gen en_US.utf8 && locale-gen de_DE.UTF-8 && update-locale \
