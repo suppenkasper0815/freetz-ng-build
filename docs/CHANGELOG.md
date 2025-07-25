@@ -60,7 +60,7 @@ Latest changes
     * fakeroot 1.37.1.2
     * gmp 6.3.0
     * gperf 3.2
-    * iPerf3 3.3/3.19
+    * iPerf3 3.3/3.19.1
     * kconfig 6.15
     * libtool 2.5.4
     * m4 1.4.20
