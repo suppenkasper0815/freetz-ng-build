@@ -92,6 +92,7 @@ Latest changes
 
   - Packages:
     * ACME.sh 3.1.1
+    * Apache2 2.4.65
     * Atop 2.11.1
     * BIND 9.11.37/9.20.11
     * CA-bundle 2025-07-15
