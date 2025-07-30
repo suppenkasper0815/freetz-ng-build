@@ -54,6 +54,7 @@ Latest changes
     * uClibc 0.9.28/0.9.29/0.9.32.1/0.9.33.2/1.0.14/1.0.52
 
   - Host tools:
+    * automake 1.18
     * ca-bundle 2025-07-15
     * cmake 4.0.3
     * dtc 1.7.2
