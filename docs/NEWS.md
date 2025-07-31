@@ -1,8 +1,8 @@
 # Neuigkeiten
 
   * __[2025-07-31](#2025-07-31)__<a id='2025-07-31'></a><br>
-    Für "Labor"-Firmware wird die `.zip`-Datei nicht mehr automatisch heruntergeladen. Die `.zip`- oder<br>
-    `.image`-Datei muss manuell heruntergeladen und in das Verzeichnis `dl/fw/` gespeichert werden.<br>
+    Für "Labor"-Firmware wird die `.zip`-Datei nicht mehr automatisch heruntergeladen. Diese Datei muss manuell<br>
+    heruntergeladen und die `.image`-Datei in das Verzeichnis `dl/fw/` gespeichert werden.<br>
     Ob Labors in Zukunft überhaupt noch unterstützt werden ist fraglich, da es von AVM fast nie GPL-Quellcode gibt.<br>
     Siehe<br>
     - [Sourcecode von AVM anfordern](https://github.com/orgs/Freetz-NG/discussions/134)<br>
