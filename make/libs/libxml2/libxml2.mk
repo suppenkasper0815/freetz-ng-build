@@ -91,7 +91,7 @@ $(pkg)-precompiled: $($(PKG)_TARGET_BINARY)
 $(pkg)-clean:
 	-$(SUBMAKE) -C $(LIBXML2_DIR) clean
 	$(RM) -r \
-		$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/libxml2* \
+		$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/libxml2.* \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/bin/xml2-config \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/include/libxml* \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/pkgconfig/libxml-2.0.pc
