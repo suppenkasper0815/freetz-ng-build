@@ -116,7 +116,7 @@ Latest changes
     * Lua 5.1.5/5.4.8
     * mc (Midnight Commander) 4.8.31/4.8.33
     * Minicom 2.10
-    * Mosquitto 2.0.21
+    * Mosquitto 2.0.22
     * Nano 8.5
     * NcFTP 3.3.0
     * Nmap 4.76/5.51/7.97
