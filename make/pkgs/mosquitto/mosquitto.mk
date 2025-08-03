@@ -1,7 +1,7 @@
 $(call PKG_INIT_BIN, 2.0.22)
 $(PKG)_SOURCE:=$(pkg)-$($(PKG)_VERSION).tar.gz
 $(PKG)_HASH:=2f752589ef7db40260b633fbdb536e9a04b446a315138d64a7ff3c14e2de6b68
-$(PKG)_SITE:=https://mosquitto.org/files/source
+$(PKG)_SITE:=https://mosquitto.org/files/source,https://ftp.fau.de/gentoo/distfiles/95
 ### WEBSITE:=https://www.mosquitto.org/
 ### MANPAGE:=https://www.mosquitto.org/documentation/
 ### CHANGES:=https://mosquitto.org/blog/
