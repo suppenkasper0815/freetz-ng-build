@@ -90,6 +90,7 @@ Latest changes
     * 7590 ac  8.20 - 4.9.337
 
   - Patches:
+    * New Patch: homelua_symlink_fixes for Fritzos 8.2
 
   - Packages:
     * ACME.sh 3.1.1
