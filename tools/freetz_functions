@@ -108,7 +108,11 @@ replace_lua_function() {
 #homelua_disable <function-name> [optional return value]
 #easily disable function $1 within "home.lua" by returning $2, if $2 is omitted the function is assumed to return void
 homelua_disable() {
-	replace_lua_function "${HTML_LANG_MOD_DIR}/home/home.lua" "$1" "$2"
+	if [ -e "${HTML_LANG_MOD_DIR}/home/jsonhome.lua" ]; then
+		replace_lua_function "${HTML_LANG_MOD_DIR}/home/jsonhome.lua" "$1" "$2"
+	else
+		replace_lua_function "${HTML_LANG_MOD_DIR}/home/home.lua" "$1" "$2"
+	fi
 }
 homelua_disable_wrapper() {
 	if [ "$FREETZ_AVM_HAS_LUA_SCALABLE" == "y" ]; then
