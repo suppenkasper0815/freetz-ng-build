@@ -376,7 +376,9 @@ enumerate_mirrors_official() {
 		done
 	fi
 
-	mirrors_official=("${sites[@]}")
+	for retry in 1 2 3; do
+		mirrors_official+=("${sites[@]}")
+	done
 }
 
 # Add all mirrors to 'sites' array (if not invalid checksum (=repo only) and not an image)
