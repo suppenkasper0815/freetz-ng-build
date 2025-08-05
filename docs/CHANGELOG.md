@@ -90,7 +90,7 @@ Latest changes
     * 7590 ac  8.20 - 4.9.337
 
   - Patches:
-    * Various Fritzos 8.2 related changes, except remove_aha + hide_dsl + remove_nas
+    * Various Fritzos 8.2 related changes, except: remove_aha + hide_dsl + remove_nas
     * New Patch: homelua_symlink_fixes for Fritzos 8.2
 
   - Packages:
