@@ -136,7 +136,7 @@ Latest changes
     * SFK 2.0.0.3
     * Smartmontools 7.5
     * socat 1.8.0.3
-    * sslh 2.2.3
+    * sslh 2.2.4
     * strace 4.9/5.0/6.16
     * Stunnel 5.75
     * Sudo 1.9.17p2
