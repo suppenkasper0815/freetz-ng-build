@@ -121,7 +121,7 @@ Latest changes
     * mc (Midnight Commander) 4.8.31/4.8.33
     * Minicom 2.10
     * Mosquitto 2.0.22
-    * Nano 8.5
+    * Nano 8.6
     * NcFTP 3.3.0
     * Nmap 4.76/5.51/7.97
     * OpenSSH 9.3p2/10.0p1
