@@ -162,6 +162,7 @@ Latest changes
     * libffi 3.5.2
     * libpcap 1.1.1/1.10.5
     * libusb1 1.0.23/1.0.29
+    * libtirpc 1.3.7
     * libuv 1.44.2/1.51.0
     * libpng 1.6.50
     * liburcu 0.15.3
