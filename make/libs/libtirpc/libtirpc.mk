@@ -42,7 +42,7 @@ $(pkg)-precompiled: $($(PKG)_TARGET_BINARY)
 
 $(pkg)-clean:
 	-$(SUBMAKE) -C $(LIBTIRPC_DIR) clean
-	$(RM) \
+	$(RM) -r \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/libtirpc.* \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/include/tirpc/ \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/pkgconfig/libtirpc.pc
