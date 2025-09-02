@@ -30,6 +30,7 @@ $($(PKG)_STAGING_BINARY): $($(PKG)_BINARY)
 		DESTDIR="$(TARGET_TOOLCHAIN_STAGING_DIR)" \
 		install
 	$(PKG_FIX_LIBTOOL_LA) \
+		$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/libtirpc.la \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/pkgconfig/libtirpc.pc
 
 $($(PKG)_TARGET_BINARY): $($(PKG)_STAGING_BINARY)
