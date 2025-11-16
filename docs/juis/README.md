@@ -98,7 +98,6 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
 
 ### FOS-Inhaus
   - HWR 226: [FRITZ.Box_7590-08.21-126212-Inhaus.image](http://download.avm.de/inhaus/Smart24P2NL1/7590/FRITZ.Box_7590-08.21-126212-Inhaus.image)
-  - HWR 227: [FRITZ.Box_4040-08.00-117598-Inhaus.image](http://download.avm.de/inhaus/Smart24P1NL1/4040/FRITZ.Box_4040-08.00-117598-Inhaus.image)
   - HWR 229: [FRITZ.Powerline_1260E-08.10-124399-Inhaus.image](http://download.avm.de/inhaus/Smart24P2/1260E/FRITZ.Powerline_1260E-08.10-124399-Inhaus.image)
   - HWR 236: [FRITZ.Box_7530-08.10-126142-Inhaus.image](http://download.avm.de/inhaus/Smart24P2/7530/FRITZ.Box_7530-08.10-126142-Inhaus.image)
   - HWR 240: [FRITZ.Repeater_600-08.10-125798-Inhaus.image](http://download.avm.de/inhaus/Smart24P2/600/FRITZ.Repeater_600-08.10-125798-Inhaus.image)
@@ -149,10 +148,8 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
   - MHW 08.01: [08.01.05.11.avm.de.upd](http://download.avm.de/dect/0801/smart24p1/08.01.05.11.avm.de.upd)
   - MHW 08.02: [08.02.05.11.avm.de.upd](http://download.avm.de/dect/0802/smart24p1/08.02.05.11.avm.de.upd)
   - MHW 08.03: [08.03.05.12.avm.de.upd](http://download.avm.de/dect/0803/smart24p1/08.03.05.12.avm.de.upd)
-  - MHW 08.04: [08.04.05.12.avm.de.upd](http://download.avm.de/dect/0804/labor/08.04.05.12.avm.de.upd)
 
 ### Dect-Inhaus
-  - MHW 08.03: [08.03.05.11.avm.de.upd](http://download.avm.de/dect/0803/smart24p1/08.03.05.11.avm.de.upd)
 
 ### BPjM
   - CRC 86f2ba52: [bpjm.data](http://download.avm.de/bpjm/290332/bpjm.data)
