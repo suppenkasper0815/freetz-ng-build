@@ -83,6 +83,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
 
 ### FOS-Labor
   - HWR 226: [FRITZ.Box_7590-08.24-127389-LabBETA.image](http://download.avm.de/labor/Smart24P2NL1/7590/FRITZ.Box_7590-08.24-127389-LabBETA.image)
+  - HWR 227: [FRITZ.Box_4040-07.59.image](http://download.avm.de/firmware/4040/347831279831289213893218/FRITZ.Box_4040-07.59.image)
   - HWR 233: [FRITZ.Box_6591_Cable-08.24-127734-LabBETA.image](http://download.avm.de/labor/Smart24P2NL1/6591Cable/FRITZ.Box_6591_Cable-08.24-127734-LabBETA.image)
   - HWR 236: [FRITZ.Box_7530-08.10-123914-LabBETA.image](http://download.avm.de/labor/Smart24P2/7530/FRITZ.Box_7530-08.10-123914-LabBETA.image)
   - HWR 239: [FRITZ.Box_7583-07.39-103075-LabBETA.image](http://download.avm.de/labor/MOVE21/7583/FRITZ.Box_7583-07.39-103075-LabBETA.image)
@@ -110,7 +111,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
   - HWR 249: [FRITZ.Powerline_1260-08.10-126208-Inhaus.image](http://download.avm.de/inhaus/Smart24P2/1260/FRITZ.Powerline_1260-08.10-126208-Inhaus.image)
   - HWR 253: [FRITZ.Repeater_6000-08.10-127324-Inhaus.image](http://download.avm.de/inhaus/Smart24P2/6000/FRITZ.Repeater_6000-08.10-127324-Inhaus.image)
   - HWR 256: [FRITZ.Box_7530_AX-08.24-127974-Inhaus.image](http://download.avm.de/inhaus/Smart24P2NL1/7530AX/FRITZ.Box_7530_AX-08.24-127974-Inhaus.image)
-  - HWR 257: [FRITZ.Box_5530_Fiber-08.24-127773-Inhaus.image](http://download.avm.de/inhaus/Smart24P2NL1/5530Fiber/FRITZ.Box_5530_Fiber-08.24-127773-Inhaus.image)
+  - HWR 257: [FRITZ.Box_5530_Fiber-08.24-127976-Inhaus.image](http://download.avm.de/inhaus/Smart24P2NL1/5530Fiber/FRITZ.Box_5530_Fiber-08.24-127976-Inhaus.image)
   - HWR 258: [FRITZ.Box_6850_5G-08.10-124810-Inhaus.image](http://download.avm.de/inhaus/Smart24P2/68505G/FRITZ.Box_6850_5G-08.10-124810-Inhaus.image)
   - HWR 259: [FRITZ.Box_7590_AX-08.24-127981-Inhaus.image](http://download.avm.de/inhaus/Smart24P2NL1/7590AX/FRITZ.Box_7590_AX-08.24-127981-Inhaus.image)
   - HWR 261: [FRITZ.Box_4060-08.10-127911-Inhaus.image](http://download.avm.de/inhaus/Smart24P2/4060/FRITZ.Box_4060-08.10-127911-Inhaus.image)
